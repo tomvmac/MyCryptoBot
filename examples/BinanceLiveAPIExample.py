@@ -36,9 +36,10 @@ client.API_URL = LIVE_BINANCE_API_URL
 # print(client.get_asset_balance(asset='BTC'))
 
 # get latest price from Binance API
-btc_price = client.get_symbol_ticker()
+BTCSymbol = "BTCUSD"
+btc_price = client.get_symbol_ticker(symbol=BTCSymbol)
 # print full output (dictionary)
-# print(btc_price)
+print(btc_price)
 
 
 # get latest price from Binance API
@@ -46,8 +47,8 @@ prices = client.get_symbol_ticker()
 # print full output (dictionary)
 #print(prices)
 # loop through prices
-for price in prices:
-    if price['symbol'] in coinsDict:
-        print('symbol:', price['symbol'])
-        print('price:', price['price'])
-        print('------------')
+# for price in prices:
+#     if price['symbol'] in coinsDict:
+#         print('symbol:', price['symbol'])
+#         print('price:', price['price'])
+#         print('------------')
