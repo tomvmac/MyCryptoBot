@@ -18,10 +18,21 @@ This is a project that uses Python to retrieve crypto currency pricing from Bina
 > pip install schedule
 ```
 
+## Configuration
+The following environment variables are required.  Test env variables are ONLY required to connect to test Binance.
+```
+TEST_BINANCE_API_KEY
+TEST_BINANCE_SECRET
+LIVE_BINANCE_API_KEY
+LIVE_BINANCE_SECRET
+```
+
+
 ## Key Components
 
 |  Component | Description   | 
 |---|---|
+|  Constants | Provides constants for configurable settings such as keys, secrets, urls, file paths, etc.    |
 |  Executor  | Performs the execution of the entire process including initialization, scheduling, and execution.  |  
 |  PriceManager | Checks prices of each coin and determines to trade or not and updates the last prices on file.  |   
 |  Trader | Executes trades (open/close) and records the details of each trade.  |  
