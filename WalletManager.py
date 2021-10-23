@@ -40,14 +40,3 @@ def deleteWalletItem(wallet, itemToDelete):
         itemIndex += 1
 
     return wallet
-
-# ---------------------------------------------------------------------------------
-# driver code
-wallet = loadWallet()
-print(wallet)
-
-# delete item from wallet
-item = {}
-item["symbol"] = "BNBUSD"
-wallet = deleteWalletItem(wallet, item)
-print(wallet)

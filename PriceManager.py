@@ -55,8 +55,3 @@ def processPrices(prices, coinsDict):
     #    c. set price to new price from response
 
 
-# --------------------------------------------------------------------------------------------------------------------
-# Driver Code
-# print(loadBinanceCoins())
-# print(updateBinanceCoinsWithLatestPrices())
-
