@@ -1,0 +1,26 @@
+[
+  {
+    "symbol": "USD",
+    "price": 0,
+    "qty": 10000,
+    "balance": 0
+  },
+  {
+    "symbol": "BTCUSD",
+    "price": 0,
+    "qty": 0.52,
+    "balance": 0
+  },
+  {
+    "symbol": "BNBUSD",
+    "price": 0,
+    "qty": 1,
+    "balance": 0
+  },
+  {
+    "symbol": "ETHUSD",
+    "price": 0,
+    "qty": 2.5,
+    "balance": 0
+  }
+]

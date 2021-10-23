@@ -34,10 +34,24 @@ import json
 # 	print(mydata["Google"])
 
 # read file, change contents and then write file
-with open("files/myfile.json", "r") as j:
-	mydata = json.load(j)
-	mydata["Python"] = "Snake"
-	mydata["BTC"] = "BitCoin"
+# with open("files/myfile.json", "r") as j:
+# 	mydata = json.load(j)
+# 	mydata["Python"] = "Snake"
+# 	mydata["BTC"] = "BitCoin"
+# j.close()
+#
+# with open("files/myfile.json", "w") as k:
+# 	json.dump(mydata, k)
+# k.close()
 
-with open("files/myfile.json", "w") as k:
+
+# read file, update file with element values
+with open("files/testcoins.json", "r") as j:
+	mydata = json.load(j)
+	del mydata[3]
+	print(mydata)
+j.close()
+
+with open("files/testcoins.json", "w") as k:
 	json.dump(mydata, k)
+k.close()

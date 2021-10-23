@@ -1,5 +1,7 @@
 import sched
 import time
+
+import Constants
 import PriceManager
 
 def initialize():
@@ -23,5 +25,5 @@ def executeProcess():
 scheduler = sched.scheduler(time.time, time.sleep)
 
 while True:
-    scheduler.enter(3, 1,executeProcess)
+    scheduler.enter(Constants.SCHEDULE_EXECUTION_INTERVAL_IN_SECONDS, Constants.SCHEDULE_SLEEP_INTERVAL_IN_SECONDS,executeProcess)
     scheduler.run()

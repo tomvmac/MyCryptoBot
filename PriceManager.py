@@ -4,16 +4,27 @@ import Constants
 import BinanceClient
 
 def loadBinanceCoins():
-    # init coinsDict
-    coinsDict = {}
     with open(Constants.BINANCE_COINS_JSON_PATH, "r") as j:
         data = json.load(j)
+    j.close()
 
-    for dataElement in data:
-        coinsDict[dataElement["symbol"]] = 0
+    return data
 
-    return coinsDict
 
+def updateBinanceCoinsWithLatestPrices():
+    coins = loadBinanceCoins()
+    prices = getCurrentPrices()
+
+    # iterate through prices, if price symbol and coin symbol equal, set price
+    for price in prices:
+        if price["symbol"] in coins:
+            coins[price["symbol"]] = {'symbol': price["symbol"], 'price': float(price["price"])}
+    # Update coins to file
+    with open(Constants.BINANCE_COINS_JSON_PATH, "w") as k:
+        json.dump(coins, k)
+    k.close()
+
+    return coins
 
 def getCurrentPrice(symbol):
     client = BinanceClient.getClient()
@@ -44,4 +55,8 @@ def processPrices(prices, coinsDict):
     #    c. set price to new price from response
 
 
+# --------------------------------------------------------------------------------------------------------------------
+# Driver Code
+# print(loadBinanceCoins())
+# print(updateBinanceCoinsWithLatestPrices())
 

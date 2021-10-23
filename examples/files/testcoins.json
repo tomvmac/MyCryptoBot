@@ -1,5 +1,6 @@
 [
   {"symbol": "BNBBUSD"},
   {"symbol": "BTCBUSD"},
-  {"symbol": "ETHBUSD"}
+  {"symbol": "ETHBUSD"},
+  {"symbol": "CRVUSD"}
 ]

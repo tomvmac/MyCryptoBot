@@ -42,9 +42,4 @@ validateKeyInDict(validKey, coinsDict)
 validateKeyInDict(invalidKey, coinsDict)
 
 
-# Process price check
-# 1. Call Binance API to get all prices
-# 2. Loop through each response
-#    a. if symbol exists in coinsDict
-#    b. if price > 0, compare prices, execute buy trade
-#    c. set price to new price from response
+
