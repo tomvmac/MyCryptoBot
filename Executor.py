@@ -4,15 +4,8 @@ import time
 import Constants
 import PriceManager
 
-def initialize():
-    # Initialize variables
-    activeCoins = PriceManager.loadBinanceCoins()
 
 def executeProcess():
-    # Get Prices
-    # prices = PriceManager.getCurrentPrices()
-    # PriceManager.printPrices(prices, activeCoins)
-
     # Get BTC Price
     price = PriceManager.getCurrentPrice("BTCUSD")
     PriceManager.printPrice(price)

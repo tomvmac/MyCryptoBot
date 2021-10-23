@@ -38,13 +38,14 @@ def getCurrentPrices():
 def printPrice(price):
     print('symbol:', price['symbol'])
     print('price:', price['price'])
+    print('\n------------')
 
 def printPrices(prices, coinsDict):
     for price in prices:
         if price['symbol'] in coinsDict:
             print('symbol:', price['symbol'])
             print('price:', price['price'])
-            print('------------')
+            print('\n------------')
 
 
 def processPrices(prices, coinsDict):
