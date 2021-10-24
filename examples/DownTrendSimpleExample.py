@@ -1,20 +1,28 @@
 # Given a list of numbers, determine if it is overall downtrend
 
 def isDownTrend(prices):
-    isDown = False
-    trend = []
+    trends = []
 
     for x in range(0, len(prices)-1):
+        #  Collect Trend
         if prices[x + 1]:
-            # print(prices[x], prices[x + 1])
-            # print(prices[x] < prices[x+1])
-            # print("\n---------------")
             if prices[x+1] >= prices[x]:
-                trend.append(0)
+                trends.append(0)
             else:
-                trend.append(1)
+                trends.append(1)
 
-    return trend
+    # Process Trend
+    for y in range(0, len(trends)-1):
+        if trends[y + 1]:
+            if trends[y] + trends[y+1] > 1:
+                return True
+
+    return False
+
+# TODO:
+# 2. List shifting, add element to end of list and remove the first
+
+
 
 #---------------------------------------------------------------
 prices1 = [1.23, 1.24, 1.25, 1.26]  # Up: All Up
