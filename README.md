@@ -39,6 +39,24 @@ LIVE_BINANCE_SECRET
 |  WalletManager | Provides wallet management for quantity of coins available in the wallet.   |  
  
 
+## Deployment
+It is probably a good idea to run this bot as a background process when it is deployed on a server like AWS EC2.
+
+### Run python script in background
+```
+>python3 Executor.py &
+```
+
+### Find python script process
+```
+ps -ef | grep Executor.py
+```
+
+### Stop python script process
+```
+pkill -f Executor.py
+```
+
 
 ## Resources
 
