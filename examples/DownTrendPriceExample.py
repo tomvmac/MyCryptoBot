@@ -30,7 +30,7 @@ def addPriceTrend(priceTrends, priceTrend):
         # Remove first element from priceTrends
         priceTrends.pop(0)
         # Reindex priceTrends
-        for i in range(0 , len(priceTrends)-1):
+        for i in range(0 , len(priceTrends)):
             priceTrends[i]["idx"] = i
 
     # Append new priceTrend
@@ -47,22 +47,24 @@ def addPriceTrend(priceTrends, priceTrend):
 # ------------------------------------------------------------------------------------------------------------------------------------
 
 # add to PriceTrends
-# priceTrends = [{"idx": 2, "price": 1.22}, {"idx": 1, "price": 1.24}, {"idx": 3, "price": 1.23}]
-# addPriceTrend(priceTrends, {"idx": 0, "price": 1.28})
-# addPriceTrend(priceTrends, {"idx": 0, "price": 1.34})
-# addPriceTrend(priceTrends, {"idx": 0, "price": 1.99})
-# addPriceTrend(priceTrends, {"idx": 0, "price": 1.98})
-# print(priceTrends)
+priceTrends = [{"idx": 0, "price": 1.22}, {"idx": 2, "price": 1.24}, {"idx": 1, "price": 1.23}, {"idx": 3, "price": 1.28}]
+
+addPriceTrend(priceTrends, {"idx": 0, "price": 1.34})
+addPriceTrend(priceTrends, {"idx": 0, "price": 1.99})
+addPriceTrend(priceTrends, {"idx": 0, "price": 1.98})
+addPriceTrend(priceTrends, {"idx": 0, "price": 2.98})
+
+print(priceTrends)
 
 # isDownTrend
-priceTrends1 = [{"idx": 1, "price": 1.23}, {"idx": 2, "price": 1.24}, {"idx": 3, "price": 1.25}, {"idx": 3, "price": 1.26}]  # Up / False
-priceTrends2 = [{"idx": 1, "price": 1.25}, {"idx": 2, "price": 1.24}, {"idx": 3, "price": 1.23}, {"idx": 3, "price": 1.22}]  # Down / True
-priceTrends3 = [{"idx": 1, "price": 1.24}, {"idx": 2, "price": 1.23}, {"idx": 3, "price": 1.23}, {"idx": 3, "price": 1.22}]  # Up / False
-priceTrends4 = [{"idx": 1, "price": 1.23}, {"idx": 2, "price": 1.24}, {"idx": 3, "price": 1.23}, {"idx": 3, "price": 1.22}]  # Down / True
-priceTrends5 = [{"idx": 1, "price": 1.24}, {"idx": 2, "price": 1.23}, {"idx": 3, "price": 1.25}, {"idx": 3, "price": 1.22}]  # Up / False
-priceTrends6 = [{"idx": 1, "price": 1.20}, {"idx": 2, "price": 1.23}, {"idx": 3, "price": 1.23}, {"idx": 3, "price": 1.23}, {"idx": 3, "price": 1.24}, {"idx": 3, "price": 1.25}, {"idx": 3, "price": 1.20}]  # Up / False
-priceTrends7 = [{"idx": 1, "price": 1.20}, {"idx": 2, "price": 1.23}, {"idx": 3, "price": 1.23}, {"idx": 3, "price": 1.20}, {"idx": 3, "price": 1.21}, {"idx": 3, "price": 1.25}, {"idx": 3, "price": 1.20}]  # Up / False
-priceTrends8 = [{"idx": 1, "price": 1.20}, {"idx": 2, "price": 1.23}, {"idx": 3, "price": 1.21}, {"idx": 3, "price": 1.20}, {"idx": 3, "price": 1.19}, {"idx": 3, "price": 1.25}, {"idx": 3, "price": 1.20}]  # Down / True
+priceTrends1 = [{"idx": 0, "price": 1.23}, {"idx": 1, "price": 1.24}, {"idx": 2, "price": 1.25}, {"idx": 3, "price": 1.26}]  # Up / False
+priceTrends2 = [{"idx": 0, "price": 1.25}, {"idx": 1, "price": 1.24}, {"idx": 2, "price": 1.23}, {"idx": 3, "price": 1.22}]  # Down / True
+priceTrends3 = [{"idx": 0, "price": 1.24}, {"idx": 1, "price": 1.23}, {"idx": 2, "price": 1.23}, {"idx": 3, "price": 1.22}]  # Up / False
+priceTrends4 = [{"idx": 0, "price": 1.23}, {"idx": 1, "price": 1.24}, {"idx": 2, "price": 1.23}, {"idx": 3, "price": 1.22}]  # Down / True
+priceTrends5 = [{"idx": 0, "price": 1.24}, {"idx": 1, "price": 1.23}, {"idx": 2, "price": 1.25}, {"idx": 3, "price": 1.22}]  # Up / False
+priceTrends6 = [{"idx": 0, "price": 1.20}, {"idx": 1, "price": 1.23}, {"idx": 2, "price": 1.23}, {"idx": 3, "price": 1.23}, {"idx": 4, "price": 1.24}, {"idx": 5, "price": 1.25}, {"idx": 6, "price": 1.20}]  # Up / False
+priceTrends7 = [{"idx": 0, "price": 1.20}, {"idx": 1, "price": 1.23}, {"idx": 2, "price": 1.23}, {"idx": 3, "price": 1.20}, {"idx": 4, "price": 1.21}, {"idx": 5, "price": 1.25}, {"idx": 6, "price": 1.20}]  # Up / False
+priceTrends8 = [{"idx": 0, "price": 1.20}, {"idx": 1, "price": 1.23}, {"idx": 2, "price": 1.21}, {"idx": 3, "price": 1.20}, {"idx": 4, "price": 1.19}, {"idx": 5, "price": 1.25}, {"idx": 6, "price": 1.20}]  # Down / True
 
 
 print(isDownTrend(priceTrends1))
