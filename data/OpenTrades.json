@@ -1,0 +1,16 @@
+[
+  {
+    "symbol": "ETHUSD",
+    "type": "BUY",
+    "status": "OPEN",
+    "price": 4000,
+    "qty": 1
+  },
+  {
+    "symbol": "CRVUSD",
+    "type": "BUY",
+    "status": "OPEN",
+    "price": 150,
+    "qty": 10
+  }
+]

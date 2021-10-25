@@ -12,7 +12,19 @@ print(wallet)
 
 
 # Update item on wallet
-# itemToUpdate = {"symbol": "USD", "qty": 100.10}
-itemToUpdate = {"symbol": "ETCUSD", "qty": 5005}
-wallet = WalletManager.updateWalletItem(wallet, itemToUpdate)
+itemToUpdate1 = {
+    "symbol": "ETCUSD",
+    "price": 120,
+    "qty": 2,
+    "balance": 500
+  }
+
+itemToUpdate2 = {
+    "symbol": "BNBUSD",
+    "price": 483.8602,
+    "qty": 2,
+    "balance": 483.8602
+  }
+wallet = WalletManager.updateWalletItem(wallet, itemToUpdate1)
+wallet = WalletManager.updateWalletItem(wallet, itemToUpdate2)
 print(wallet)
