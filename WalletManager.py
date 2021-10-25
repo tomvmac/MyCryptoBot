@@ -19,12 +19,25 @@ def loadWallet():
     return wallet
 
 def updateWalletItem(wallet, itemToUpdate):
-    # loop through wallet, if itemExists, add it, and return
+    isItemInWallet = False
 
-    # add item after loop, assuming it was not there
+    # Loop through wallet, if itemExists, update, and return
+    # itemToUpdate = {"symbol": "USD", "qty": "100"}
+    for item in wallet:
+        if item["symbol"] == itemToUpdate["symbol"]:
+            isItemInWallet = True
+            item["qty"] = item["qty"] + itemToUpdate["qty"]
 
+    # Add item after loop, assuming it was not there
+    if isItemInWallet == False:
+       wallet.append(itemToUpdate)
 
-    return
+    # update Wallet.json file
+    with open(Constants.WALLET_JSON_PATH, "w") as k:
+        json.dump(wallet, k)
+    k.close()
+
+    return wallet
 
 
 def deleteWalletItem(wallet, itemToDelete):

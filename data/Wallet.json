@@ -2,25 +2,29 @@
   {
     "symbol": "USD",
     "price": 0,
-    "qty": 10000,
+    "qty": 153.22,
     "balance": 0
   },
   {
     "symbol": "BTCUSD",
-    "price": 0,
+    "price": 63076.7,
     "qty": 0.52,
-    "balance": 0
+    "balance": 32799.884
   },
   {
     "symbol": "BNBUSD",
-    "price": 0,
+    "price": 483.8602,
     "qty": 1,
-    "balance": 0
+    "balance": 483.8602
   },
   {
     "symbol": "ETHUSD",
-    "price": 0,
-    "qty": 2.5,
-    "balance": 0
+    "price": 4142.99,
+    "qty": 12.5,
+    "balance": 51787.375
+  },
+  {
+    "symbol": "ETCUSD",
+    "qty": 5005
   }
 ]
