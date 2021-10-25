@@ -2,6 +2,8 @@
   {
     "symbol": "ETHUSD",
     "type": "BUY",
+    "tradeDate": "09/30/2021",
+    "tradeTime": "09:20:30",
     "status": "OPEN",
     "price": 4000,
     "qty": 1
@@ -9,6 +11,8 @@
   {
     "symbol": "CRVUSD",
     "type": "BUY",
+    "tradeDate": "10/25/2021",
+    "tradeTime": "14:57:52",
     "status": "OPEN",
     "price": 150,
     "qty": 10

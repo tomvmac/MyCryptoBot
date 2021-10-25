@@ -6,5 +6,3 @@ trade2 = {"symbol": "CRVUSD", "type": "BUY", "tradeDate": "", "tradeTime": "", "
 
 print(Trader.openTrade(trade1))
 print(Trader.openTrade(trade2))
-
-
