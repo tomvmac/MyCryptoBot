@@ -1,5 +1,6 @@
 import json
-from src import GeneralUtils, Constants
+from src import Constants
+import GeneralUtils
 
 
 def openTrade(trade):
