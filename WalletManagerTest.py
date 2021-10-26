@@ -13,9 +13,9 @@ print(wallet)
 
 # Update item on wallet
 itemToUpdate1 = {
-    "symbol": "ETCUSD",
-    "price": 120,
-    "qty": -2,
+    "symbol": "USD",
+    "price": 1,
+    "qty": -1000,
     "balance": 500
   }
 
@@ -25,6 +25,6 @@ itemToUpdate2 = {
     "qty": 2,
     "balance": 483.8602
   }
-wallet = WalletManager.updateWalletItem(wallet, itemToUpdate1)
-wallet = WalletManager.updateWalletItem(wallet, itemToUpdate2)
-print(wallet)
+# wallet = WalletManager.updateWalletItem(wallet, itemToUpdate1)
+# wallet = WalletManager.updateWalletItem(wallet, itemToUpdate2)
+# print(wallet)

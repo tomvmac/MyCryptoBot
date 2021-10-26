@@ -2,6 +2,8 @@ import json
 import Constants
 import DateTimeUtils
 import Logger
+import WalletManager
+
 
 def loadOpenTrades():
     openTrades = {}
@@ -59,6 +61,26 @@ def openTrade(trade):
 
     Logger.GetLogger().info("Open Trade - {x}".format(x=trade))
 
+    # Update Wallet
+    wallet = WalletManager.loadWallet()
+
+    # Add open trade to
+    walletItemTrade = {}
+    walletItemTrade["symbol"] = trade["symbol"]
+    walletItemTrade["price"] = trade["price"]
+    walletItemTrade["qty"] = trade["qty"]
+    walletItemTrade["balance"] = 0
+    WalletManager.updateWalletItem(wallet, walletItemTrade)
+
+    # Deduct from Source Currency wallet
+    tradeQtyInSourceCurrency = trade["qty"] * trade["price"]
+    walletItemSourceCurrency = {}
+    walletItemSourceCurrency["symbol"] = Constants.TRADING_SOURCE_CURRENCY_SYMBOL
+    walletItemSourceCurrency["price"] = 1
+    walletItemSourceCurrency["qty"] = -1 * tradeQtyInSourceCurrency
+    walletItemSourceCurrency["balance"] = 0
+    WalletManager.updateWalletItem(wallet, walletItemSourceCurrency)
+
     return openTrades
 
 
@@ -110,6 +132,27 @@ def closeTrade(trade):
     with open(Constants.CLOSED_TRADES_JSON_PATH, "w") as m:
         json.dump(closedTrades, m)
     m.close()
+
+    # Update Wallet
+    wallet = WalletManager.loadWallet()
+    # Add close trade to
+    walletItemTrade = {}
+    walletItemTrade["symbol"] = trade["symbol"]
+    walletItemTrade["price"] = trade["price"]
+    walletItemTrade["qty"] = -1 * trade["qty"]
+    walletItemTrade["balance"] = 0
+    WalletManager.updateWalletItem(wallet, walletItemTrade)
+
+    # Deduct from Source Currency wallet
+    tradeQtyInSourceCurrency = trade["qty"] * trade["price"]
+    walletItemSourceCurrency = {}
+    walletItemSourceCurrency["symbol"] = Constants.TRADING_SOURCE_CURRENCY_SYMBOL
+    walletItemSourceCurrency["price"] = 1
+    walletItemSourceCurrency["qty"] = tradeQtyInSourceCurrency
+    walletItemSourceCurrency["balance"] = 0
+    WalletManager.updateWalletItem(wallet, walletItemSourceCurrency)
+
+
 
     Logger.GetLogger().info("Close Trade - {x}".format(x=trade))
 

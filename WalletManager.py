@@ -15,7 +15,7 @@ def loadWallet():
     for item in wallet:
         if item["symbol"] in coins:
             item["price"] = coins[item["symbol"]]["price"]
-            item["balance"] = item["price"] * item["qty"]
+        item["balance"] = item["price"] * item["qty"]
 
     return wallet
 
