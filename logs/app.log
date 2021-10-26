@@ -1,0 +1,9 @@
+2021-10-26 09:09:40,121 - Open Trade - {'symbol': 'ETHUSD', 'type': 'BUY', 'tradeDate': '10/26/2021', 'tradeTime': '09:09:40', 'status': 'OPEN', 'price': 4000, 'qty': 10}
+2021-10-26 09:09:40,122 - Open Trade - {'symbol': 'CRVUSD', 'type': 'BUY', 'tradeDate': '10/26/2021', 'tradeTime': '09:09:40', 'status': 'OPEN', 'price': 150, 'qty': 10}
+2021-10-26 09:09:40,122 - Open Trade - {'symbol': 'CRVUSD', 'type': 'BUY', 'tradeDate': '10/26/2021', 'tradeTime': '09:09:40', 'status': 'OPEN', 'price': 150, 'qty': 10}
+2021-10-26 09:09:40,122 - Close Trade - {'symbol': 'CRVUSD', 'type': 'SELL', 'tradeDate': '10/26/2021', 'tradeTime': '09:09:40', 'status': 'CLOSED', 'price': 180, 'qty': 10}
+2021-10-26 09:09:40,122 - Close Trade - {'symbol': 'CRVUSD', 'type': 'SELL', 'tradeDate': '10/26/2021', 'tradeTime': '09:09:40', 'status': 'CLOSED', 'price': 180, 'qty': 10}
+2021-10-26 09:09:40,122 - Close Trade - {'symbol': 'CRVUSD', 'type': 'SELL', 'tradeDate': '10/26/2021', 'tradeTime': '09:09:40', 'status': 'CLOSED', 'price': 180, 'qty': 10}
+2021-10-26 09:14:35,499 - Update Wallet Item - {'symbol': 'ETCUSD', 'price': 120, 'qty': -2, 'balance': 500}
+2021-10-26 09:14:35,499 - Update Wallet Item - {'symbol': 'BNBUSD', 'price': 483.8602, 'qty': 2, 'balance': 483.8602}
+2021-10-26 09:14:35,499 - Update Wallet Item - {'symbol': 'BNBUSD', 'price': 483.8602, 'qty': 2, 'balance': 483.8602}
