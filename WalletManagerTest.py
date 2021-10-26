@@ -15,7 +15,7 @@ print(wallet)
 itemToUpdate1 = {
     "symbol": "ETCUSD",
     "price": 120,
-    "qty": 2,
+    "qty": -2,
     "balance": 500
   }
 

@@ -1,1 +1,32 @@
-[{"symbol": "USD", "price": 0, "qty": 153.22, "balance": 0}, {"symbol": "BTCUSD", "price": 63008.34, "qty": 0.52, "balance": 32764.3368}, {"symbol": "BNBUSD", "price": 484.0973, "qty": 3, "balance": 484.0973}, {"symbol": "ETHUSD", "price": 4201.81, "qty": 12.5, "balance": 52522.62500000001}, {"symbol": "ETCUSD", "price": 120, "qty": 2, "balance": 500}]
+[
+  {
+    "symbol": "USD",
+    "price": 0,
+    "qty": 153.22,
+    "balance": 0
+  },
+  {
+    "symbol": "BTCUSD",
+    "price": 62432.64,
+    "qty": 0.52,
+    "balance": 32464.9728
+  },
+  {
+    "symbol": "BNBUSD",
+    "price": 485.2174,
+    "qty": 5,
+    "balance": 1455.6522
+  },
+  {
+    "symbol": "ETHUSD",
+    "price": 4191.87,
+    "qty": 12.5,
+    "balance": 52398.375
+  },
+  {
+    "symbol": "ETCUSD",
+    "price": 55.0713,
+    "qty": 0,
+    "balance": 110.1426
+  }
+]

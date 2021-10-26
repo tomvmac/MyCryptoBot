@@ -1,1 +1,1 @@
-[]
+[{"symbol": "CRVUSD", "type": "SELL", "tradeDate": "10/26/2021", "tradeTime": "09:09:40", "status": "CLOSED", "price": 180, "qty": 10}, {"symbol": "CRVUSD", "type": "BUY", "tradeDate": "10/26/2021", "tradeTime": "09:09:40", "status": "CLOSED", "price": 150, "qty": 10}]

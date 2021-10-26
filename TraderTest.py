@@ -9,5 +9,5 @@ print(Trader.openTrade(trade2))
 
 
 # Close Trades
-# closeTrade = {"symbol": "CRVUSD", "type": "BUY", "tradeDate": "10/25/2021", "tradeTime": "14:57:52", "status": "OPEN", "price": 180, "qty": 10}
-# print(Trader.closeTrade(closeTrade))
+closeTrade = {"symbol": "CRVUSD", "type": "BUY", "tradeDate": "10/25/2021", "tradeTime": "14:57:52", "status": "OPEN", "price": 180, "qty": 10}
+print(Trader.closeTrade(closeTrade))

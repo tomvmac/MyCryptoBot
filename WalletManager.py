@@ -1,6 +1,7 @@
 import json
 import Constants
 import PriceManager
+import Logger
 
 def loadWallet():
     wallet = {}
@@ -37,6 +38,8 @@ def updateWalletItem(wallet, itemToUpdate):
         json.dump(wallet, k)
     k.close()
 
+    Logger.GetLogger().info("Update Wallet Item - {x}".format(x=itemToUpdate))
+
     return wallet
 
 
@@ -51,5 +54,7 @@ def deleteWalletItem(wallet, itemToDelete):
             k.close()
             return wallet
         itemIndex += 1
+
+    Logger.GetLogger().info("Update Wallet Item - {x}".format(x=itemToDelete))
 
     return wallet

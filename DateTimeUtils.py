@@ -7,3 +7,4 @@ def getCurrentDate():
 def getCurrentTime():
     now = datetime.now()
     return now.strftime("%H:%M:%S")
+

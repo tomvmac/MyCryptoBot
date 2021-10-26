@@ -1,12 +1,13 @@
 import json
 import Constants
-import GeneralUtils
+import DateTimeUtils
+import Logger
 
 
 def openTrade(trade):
     # Update trade with today's date as transaction date and current time
-    trade["tradeDate"] = GeneralUtils.getCurrentDate()
-    trade["tradeTime"] = GeneralUtils.getCurrentTime()
+    trade["tradeDate"] = DateTimeUtils.getCurrentDate()
+    trade["tradeTime"] = DateTimeUtils.getCurrentTime()
 
     # Load OpenTrades.json
     openTrades = {}
@@ -29,6 +30,8 @@ def openTrade(trade):
         json.dump(openTrades, k)
     k.close()
 
+    Logger.GetLogger().info("Open Trade - {x}".format(x=trade))
+
     return openTrades
 
 
@@ -39,8 +42,8 @@ def closeTrade(trade):
     previousBuyTradeIdx = 0
 
     # Update trade with today's date as transaction date and current time
-    trade["tradeDate"] = GeneralUtils.getCurrentDate()
-    trade["tradeTime"] = GeneralUtils.getCurrentTime()
+    trade["tradeDate"] = DateTimeUtils.getCurrentDate()
+    trade["tradeTime"] = DateTimeUtils.getCurrentTime()
     trade["type"] = "SELL"
     trade["status"] = "CLOSED"
 
@@ -80,6 +83,8 @@ def closeTrade(trade):
     with open(Constants.CLOSED_TRADES_JSON_PATH, "w") as m:
         json.dump(closedTrades, m)
     m.close()
+
+    Logger.GetLogger().info("Close Trade - {x}".format(x=trade))
 
     return closedTrades
 
