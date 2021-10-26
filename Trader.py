@@ -3,9 +3,36 @@ import Constants
 import DateTimeUtils
 import Logger
 
+def loadOpenTrades():
+    openTrades = {}
+    with open(Constants.OPEN_TRADES_JSON_PATH, "r") as j:
+        openTrades = json.load(j)
+    j.close()
+    return openTrades
+
+def getOpenTrade(symbol):
+    openTrades = []
+    with open(Constants.OPEN_TRADES_JSON_PATH, "r") as j:
+        openTrades = json.load(j)
+    j.close()
+
+    for trade in openTrades:
+        if trade["symbol"] == symbol:
+            return trade
+
+    return
+
+def loadClosedTrades():
+    closedTrades = {}
+    with open(Constants.CLOSED_TRADES_JSON_PATH, "r") as j:
+        closedTrades = json.load(j)
+    j.close()
+    return closedTrades
 
 def openTrade(trade):
     # Update trade with today's date as transaction date and current time
+    trade["status"] = "OPEN"
+    trade["type"] = "BUY"
     trade["tradeDate"] = DateTimeUtils.getCurrentDate()
     trade["tradeTime"] = DateTimeUtils.getCurrentTime()
 
@@ -88,4 +115,13 @@ def closeTrade(trade):
 
     return closedTrades
 
+def createTradeItem(priceItem, coinsDict):
+    tradeItem = {}
+    tradeItem["symbol"] = priceItem["symbol"]
+    tradeItem["price"] = coinsDict[priceItem["symbol"]]["price"]
 
+    # Calculate Qty
+    qty = Constants.TRADING_UNIT_AMOUNT / coinsDict[priceItem["symbol"]]["price"]
+    tradeItem["qty"] = qty
+
+    return tradeItem

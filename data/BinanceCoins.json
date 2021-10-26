@@ -1,1 +1,226 @@
-{"AAVEUSD": {"symbol": "AAVEUSD", "price": 338.11}, "ADAUSD": {"symbol": "ADAUSD", "price": 2.164}, "ALGOUSD": {"symbol": "ALGOUSD", "price": 2.02}, "AMPUSD": {"symbol": "AMPUSD", "price": 0.0468}, "ANKRUSD": {"symbol": "ANKRUSD", "price": 0.0941}, "ATOMUSD": {"symbol": "ATOMUSD", "price": 38.761}, "BANDUSD": {"symbol": "BANDUSD", "price": 9.3318}, "BATUSD": {"symbol": "BATUSD", "price": 0.7169}, "BCHUSD": {"symbol": "BCHUSD", "price": 619.2}, "BNBUSD": {"symbol": "BNBUSD", "price": 485.2174}, "BTCUSD": {"symbol": "BTCUSD", "price": 62432.64}, "COMPUSD": {"symbol": "COMPUSD", "price": 348.16}, "CRVUSD": {"symbol": "CRVUSD", "price": 4.915}, "DAIUSD": {"symbol": "DAIUSD", "price": 1.0005}, "DASHUSD": {"symbol": "DASHUSD", "price": 203.23}, "DOGEUSD": {"symbol": "DOGEUSD", "price": 0.2696}, "EGLDUSD": {"symbol": "EGLDUSD", "price": 281.7}, "ENJUSD": {"symbol": "ENJUSD", "price": 2.0703}, "EOSUSD": {"symbol": "EOSUSD", "price": 4.8208}, "ETCUSD": {"symbol": "ETCUSD", "price": 55.0713}, "ETHUSD": {"symbol": "ETHUSD", "price": 4191.87}, "FILUSD": {"symbol": "FILUSD", "price": 64.69}, "GRTUSD": {"symbol": "GRTUSD", "price": 1.1336}, "HBARUSD": {"symbol": "HBARUSD", "price": 0.4}, "HNTUSD": {"symbol": "HNTUSD", "price": 21.75}, "ICXUSD": {"symbol": "ICXUSD", "price": 2.0747}, "IOTAUSD": {"symbol": "IOTAUSD", "price": 1.4053}, "KNCUSD": {"symbol": "KNCUSD", "price": 1.674}, "LINKUSD": {"symbol": "LINKUSD", "price": 31.9053}, "LTCUSD": {"symbol": "LTCUSD", "price": 194.76}, "MANAUSD": {"symbol": "MANAUSD", "price": 0.8463}, "MATICUSD": {"symbol": "MATICUSD", "price": 1.8394}, "MKRUSD": {"symbol": "MKRUSD", "price": 2502.2472}, "NANOUSD": {"symbol": "NANOUSD", "price": 5.88}, "NEOUSD": {"symbol": "NEOUSD", "price": 44.869}, "OMGUSD": {"symbol": "OMGUSD", "price": 14.359}, "ONEUSD": {"symbol": "ONEUSD", "price": 0.3604}, "ONTUSD": {"symbol": "ONTUSD", "price": 0.9742}, "OXTUSD": {"symbol": "OXTUSD", "price": 0.4507}, "PAXGUSD": {"symbol": "PAXGUSD", "price": 1806.56}, "QTUMUSD": {"symbol": "QTUMUSD", "price": 13.393}, "REPUSD": {"symbol": "REPUSD", "price": 24.1}, "RVNUSD": {"symbol": "RVNUSD", "price": 0.1213}, "SOLUSD": {"symbol": "SOLUSD", "price": 207.0159}, "STORJUSD": {"symbol": "STORJUSD", "price": 1.3233}, "SUSHIUSD": {"symbol": "SUSHIUSD", "price": 11.735}, "UNIUSD": {"symbol": "UNIUSD", "price": 28.2878}, "VETUSD": {"symbol": "VETUSD", "price": 0.1434}, "VTHOUSD": {"symbol": "VTHOUSD", "price": 0.0097}, "WAVESUSD": {"symbol": "WAVESUSD", "price": 28.7295}, "XLMUSD": {"symbol": "XLMUSD", "price": 0.3809}, "XTZUSD": {"symbol": "XTZUSD", "price": 6.9022}, "ZECUSD": {"symbol": "ZECUSD", "price": 165.81}, "ZENUSD": {"symbol": "ZENUSD", "price": 85.943}, "ZILUSD": {"symbol": "ZILUSD", "price": 0.1115}, "ZRXUSD": {"symbol": "ZRXUSD", "price": 1.0718}}
+{
+  "AAVEUSD": {
+    "symbol": "AAVEUSD",
+    "price": 338.11
+  },
+  "ADAUSD": {
+    "symbol": "ADAUSD",
+    "price": 2.164
+  },
+  "ALGOUSD": {
+    "symbol": "ALGOUSD",
+    "price": 2.02
+  },
+  "AMPUSD": {
+    "symbol": "AMPUSD",
+    "price": 0.0468
+  },
+  "ANKRUSD": {
+    "symbol": "ANKRUSD",
+    "price": 0.0941
+  },
+  "ATOMUSD": {
+    "symbol": "ATOMUSD",
+    "price": 38.761
+  },
+  "BANDUSD": {
+    "symbol": "BANDUSD",
+    "price": 9.3318
+  },
+  "BATUSD": {
+    "symbol": "BATUSD",
+    "price": 0.7169
+  },
+  "BCHUSD": {
+    "symbol": "BCHUSD",
+    "price": 619.2
+  },
+  "BNBUSD": {
+    "symbol": "BNBUSD",
+    "price": 485.2174
+  },
+  "BTCUSD": {
+    "symbol": "BTCUSD",
+    "price": 62432.64
+  },
+  "COMPUSD": {
+    "symbol": "COMPUSD",
+    "price": 348.16
+  },
+  "CRVUSD": {
+    "symbol": "CRVUSD",
+    "price": 4.915
+  },
+  "DAIUSD": {
+    "symbol": "DAIUSD",
+    "price": 1.0005
+  },
+  "DASHUSD": {
+    "symbol": "DASHUSD",
+    "price": 203.23
+  },
+  "DOGEUSD": {
+    "symbol": "DOGEUSD",
+    "price": 0.2696
+  },
+  "EGLDUSD": {
+    "symbol": "EGLDUSD",
+    "price": 281.7
+  },
+  "ENJUSD": {
+    "symbol": "ENJUSD",
+    "price": 2.0703
+  },
+  "EOSUSD": {
+    "symbol": "EOSUSD",
+    "price": 4.8208
+  },
+  "ETCUSD": {
+    "symbol": "ETCUSD",
+    "price": 55.0713
+  },
+  "ETHUSD": {
+    "symbol": "ETHUSD",
+    "price": 4191.87
+  },
+  "FILUSD": {
+    "symbol": "FILUSD",
+    "price": 64.69
+  },
+  "GRTUSD": {
+    "symbol": "GRTUSD",
+    "price": 1.1336
+  },
+  "HBARUSD": {
+    "symbol": "HBARUSD",
+    "price": 0.4
+  },
+  "HNTUSD": {
+    "symbol": "HNTUSD",
+    "price": 21.75
+  },
+  "ICXUSD": {
+    "symbol": "ICXUSD",
+    "price": 2.0747
+  },
+  "IOTAUSD": {
+    "symbol": "IOTAUSD",
+    "price": 1.4053
+  },
+  "KNCUSD": {
+    "symbol": "KNCUSD",
+    "price": 1.674
+  },
+  "LINKUSD": {
+    "symbol": "LINKUSD",
+    "price": 31.9053
+  },
+  "LTCUSD": {
+    "symbol": "LTCUSD",
+    "price": 194.76
+  },
+  "MANAUSD": {
+    "symbol": "MANAUSD",
+    "price": 0.8463
+  },
+  "MATICUSD": {
+    "symbol": "MATICUSD",
+    "price": 1.8394
+  },
+  "MKRUSD": {
+    "symbol": "MKRUSD",
+    "price": 2502.2472
+  },
+  "NANOUSD": {
+    "symbol": "NANOUSD",
+    "price": 5.88
+  },
+  "NEOUSD": {
+    "symbol": "NEOUSD",
+    "price": 44.869
+  },
+  "OMGUSD": {
+    "symbol": "OMGUSD",
+    "price": 14.359
+  },
+  "ONEUSD": {
+    "symbol": "ONEUSD",
+    "price": 0.3604
+  },
+  "ONTUSD": {
+    "symbol": "ONTUSD",
+    "price": 0.9742
+  },
+  "OXTUSD": {
+    "symbol": "OXTUSD",
+    "price": 0.4507
+  },
+  "PAXGUSD": {
+    "symbol": "PAXGUSD",
+    "price": 1806.56
+  },
+  "QTUMUSD": {
+    "symbol": "QTUMUSD",
+    "price": 13.393
+  },
+  "REPUSD": {
+    "symbol": "REPUSD",
+    "price": 24.1
+  },
+  "RVNUSD": {
+    "symbol": "RVNUSD",
+    "price": 0.1213
+  },
+  "SOLUSD": {
+    "symbol": "SOLUSD",
+    "price": 207.0159
+  },
+  "STORJUSD": {
+    "symbol": "STORJUSD",
+    "price": 1.3233
+  },
+  "SUSHIUSD": {
+    "symbol": "SUSHIUSD",
+    "price": 11.735
+  },
+  "UNIUSD": {
+    "symbol": "UNIUSD",
+    "price": 28.2878
+  },
+  "VETUSD": {
+    "symbol": "VETUSD",
+    "price": 0.1434
+  },
+  "VTHOUSD": {
+    "symbol": "VTHOUSD",
+    "price": 0.0097
+  },
+  "WAVESUSD": {
+    "symbol": "WAVESUSD",
+    "price": 28.7295
+  },
+  "XLMUSD": {
+    "symbol": "XLMUSD",
+    "price": 0.3809
+  },
+  "XTZUSD": {
+    "symbol": "XTZUSD",
+    "price": 6.9022
+  },
+  "ZECUSD": {
+    "symbol": "ZECUSD",
+    "price": 165.81
+  },
+  "ZENUSD": {
+    "symbol": "ZENUSD",
+    "price": 85.943
+  },
+  "ZILUSD": {
+    "symbol": "ZILUSD",
+    "price": 0.1115
+  },
+  "ZRXUSD": {
+    "symbol": "ZRXUSD",
+    "price": 1.0718
+  }
+}

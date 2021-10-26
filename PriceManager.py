@@ -2,6 +2,7 @@ import json
 from binance.client import Client
 import Constants
 import BinanceClient
+import Trader
 
 def loadBinanceCoins():
     with open(Constants.BINANCE_COINS_JSON_PATH, "r") as j:
@@ -47,12 +48,38 @@ def printPrices(prices, coinsDict):
             print('price:', price['price'])
             print('\n------------')
 
+def hasBuyCriteriaMet(priceItem, coinsDict):
+    return
+
+
+def hasSellCriteriaMet(priceItem, coinsDict):
+    return
+
+
+def generateBuy(priceItem, coinsDict):
+    tradeItem = {}
+    if hasBuyCriteriaMet((priceItem, coinsDict)):
+        # Open Trade
+        tradeItem = Trader.createTradeItem(priceItem, coinsDict)
+        Trader.openTrade(tradeItem)
+    return
+
+def generateSell(priceItem, coinsDict):
+    tradeItem = {}
+    if hasSellCriteriaMet((priceItem, coinsDict)):
+        # Close Trade
+        tradeItem = Trader.createTradeItem(priceItem, coinsDict)
+        Trader.closeTrade(tradeItem)
+    return
 
 def processPrices(prices, coinsDict):
+    # Loop through prices and match coinsDict
+    for priceItem in prices:
+        if priceItem["symbol"] in coinsDict:
+            # Generate Buys
+            generateBuy(priceItem, coinsDict)
+            # Generate Sells
+            generateSell(priceItem, coinsDict)
     return
-    # 2. Loop through each response
-    #    a. if symbol exists in coinsDict
-    #    b. if price > 0, compare prices, execute buy trade
-    #    c. set price to new price from response
 
 

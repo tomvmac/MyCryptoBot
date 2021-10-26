@@ -7,3 +7,11 @@
 2021-10-26 09:14:35,499 - Update Wallet Item - {'symbol': 'ETCUSD', 'price': 120, 'qty': -2, 'balance': 500}
 2021-10-26 09:14:35,499 - Update Wallet Item - {'symbol': 'BNBUSD', 'price': 483.8602, 'qty': 2, 'balance': 483.8602}
 2021-10-26 09:14:35,499 - Update Wallet Item - {'symbol': 'BNBUSD', 'price': 483.8602, 'qty': 2, 'balance': 483.8602}
+Add2021-10-26 10:50:43,667 - Open Trade - {'symbol': 'AAVEUSD', 'price': 338.11, 'qty': 0.2957617343468102, 'status': 'OPEN', 'type': 'BUY', 'tradeDate': '10/26/2021', 'tradeTime': '10:50:43'}
+2021-10-26 10:52:39,211 - Open Trade - {'symbol': 'AAVEUSD', 'price': 338.11, 'qty': 0.2957617343468102, 'status': 'OPEN', 'type': 'BUY', 'tradeDate': '10/26/2021', 'tradeTime': '10:52:39'}
+2021-10-26 11:40:54,000 - Open Trade - {'symbol': 'AAVEUSD', 'price': 338.11, 'qty': 0.2957617343468102, 'status': 'OPEN', 'type': 'BUY', 'tradeDate': '10/26/2021', 'tradeTime': '11:40:53'}
+2021-10-26 11:44:39,241 - Open Trade - {'symbol': 'AAVEUSD', 'price': 338.11, 'qty': 0.2957617343468102, 'status': 'OPEN', 'type': 'BUY', 'tradeDate': '10/26/2021', 'tradeTime': '11:44:39'}
+2021-10-26 11:46:05,695 - Open Trade - {'symbol': 'AAVEUSD', 'price': 338.11, 'qty': 0.2957617343468102, 'status': 'OPEN', 'type': 'BUY', 'tradeDate': '10/26/2021', 'tradeTime': '11:46:05'}
+2021-10-26 11:46:25,862 - Open Trade - {'symbol': 'AAVEUSD', 'price': 338.11, 'qty': 0.2957617343468102, 'status': 'OPEN', 'type': 'BUY', 'tradeDate': '10/26/2021', 'tradeTime': '11:46:25'}
+2021-10-26 11:46:25,863 - Close Trade - {'symbol': 'AAVEUSD', 'price': 338.11, 'qty': 0.2957617343468102, 'status': 'CLOSED', 'type': 'SELL', 'tradeDate': '10/26/2021', 'tradeTime': '11:46:25'}
+2021-10-26 11:46:25,863 - Close Trade - {'symbol': 'AAVEUSD', 'price': 338.11, 'qty': 0.2957617343468102, 'status': 'CLOSED', 'type': 'SELL', 'tradeDate': '10/26/2021', 'tradeTime': '11:46:25'}
