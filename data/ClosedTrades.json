@@ -3,36 +3,18 @@
     "symbol": "CRVUSD",
     "type": "SELL",
     "tradeDate": "10/26/2021",
-    "tradeTime": "09:09:40",
+    "tradeTime": "14:39:35",
     "status": "CLOSED",
-    "price": 180,
+    "price": 4.82,
     "qty": 10
   },
   {
     "symbol": "CRVUSD",
     "type": "BUY",
     "tradeDate": "10/26/2021",
-    "tradeTime": "09:09:40",
+    "tradeTime": "14:37:55",
     "status": "CLOSED",
-    "price": 150,
+    "price": 4.0,
     "qty": 10
-  },
-  {
-    "symbol": "AAVEUSD",
-    "price": 338.11,
-    "qty": 0.2957617343468102,
-    "status": "CLOSED",
-    "type": "SELL",
-    "tradeDate": "10/26/2021",
-    "tradeTime": "11:46:25"
-  },
-  {
-    "symbol": "AAVEUSD",
-    "price": 338.11,
-    "qty": 0.2957617343468102,
-    "status": "CLOSED",
-    "type": "BUY",
-    "tradeDate": "10/26/2021",
-    "tradeTime": "10:50:43"
   }
 ]

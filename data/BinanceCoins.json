@@ -1,226 +1,1458 @@
 {
   "AAVEUSD": {
     "symbol": "AAVEUSD",
-    "price": 338.11
+    "price": 341.89,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 341.2
+      },
+      {
+        "idx": 1,
+        "price": 341.2
+      },
+      {
+        "idx": 2,
+        "price": 341.2
+      },
+      {
+        "idx": 3,
+        "price": 341.2
+      },
+      {
+        "idx": 4,
+        "price": 341.89
+      }
+    ]
   },
   "ADAUSD": {
     "symbol": "ADAUSD",
-    "price": 2.164
+    "price": 2.1707,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 2.1709
+      },
+      {
+        "idx": 1,
+        "price": 2.1709
+      },
+      {
+        "idx": 2,
+        "price": 2.1707
+      },
+      {
+        "idx": 3,
+        "price": 2.1709
+      },
+      {
+        "idx": 4,
+        "price": 2.1707
+      }
+    ]
   },
   "ALGOUSD": {
     "symbol": "ALGOUSD",
-    "price": 2.02
+    "price": 2.023,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 2.026
+      },
+      {
+        "idx": 1,
+        "price": 2.026
+      },
+      {
+        "idx": 2,
+        "price": 2.026
+      },
+      {
+        "idx": 3,
+        "price": 2.026
+      },
+      {
+        "idx": 4,
+        "price": 2.023
+      }
+    ]
   },
   "AMPUSD": {
     "symbol": "AMPUSD",
-    "price": 0.0468
+    "price": 0.0465,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 0.0466
+      },
+      {
+        "idx": 1,
+        "price": 0.0466
+      },
+      {
+        "idx": 2,
+        "price": 0.0466
+      },
+      {
+        "idx": 3,
+        "price": 0.0466
+      },
+      {
+        "idx": 4,
+        "price": 0.0465
+      }
+    ]
   },
   "ANKRUSD": {
     "symbol": "ANKRUSD",
-    "price": 0.0941
+    "price": 0.0936,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 0.0936
+      },
+      {
+        "idx": 1,
+        "price": 0.0936
+      },
+      {
+        "idx": 2,
+        "price": 0.0936
+      },
+      {
+        "idx": 3,
+        "price": 0.0936
+      },
+      {
+        "idx": 4,
+        "price": 0.0936
+      }
+    ]
   },
   "ATOMUSD": {
     "symbol": "ATOMUSD",
-    "price": 38.761
+    "price": 40.725,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 40.744
+      },
+      {
+        "idx": 1,
+        "price": 40.723
+      },
+      {
+        "idx": 2,
+        "price": 40.705
+      },
+      {
+        "idx": 3,
+        "price": 40.699
+      },
+      {
+        "idx": 4,
+        "price": 40.725
+      }
+    ]
   },
   "BANDUSD": {
     "symbol": "BANDUSD",
-    "price": 9.3318
+    "price": 9.8802,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 9.8802
+      },
+      {
+        "idx": 1,
+        "price": 9.8802
+      },
+      {
+        "idx": 2,
+        "price": 9.8802
+      },
+      {
+        "idx": 3,
+        "price": 9.8802
+      },
+      {
+        "idx": 4,
+        "price": 9.8802
+      }
+    ]
   },
   "BATUSD": {
     "symbol": "BATUSD",
-    "price": 0.7169
+    "price": 0.7293,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 0.73
+      },
+      {
+        "idx": 1,
+        "price": 0.73
+      },
+      {
+        "idx": 2,
+        "price": 0.73
+      },
+      {
+        "idx": 3,
+        "price": 0.73
+      },
+      {
+        "idx": 4,
+        "price": 0.7293
+      }
+    ]
   },
   "BCHUSD": {
     "symbol": "BCHUSD",
-    "price": 619.2
+    "price": 617.26,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 617.26
+      },
+      {
+        "idx": 1,
+        "price": 617.26
+      },
+      {
+        "idx": 2,
+        "price": 617.26
+      },
+      {
+        "idx": 3,
+        "price": 617.26
+      },
+      {
+        "idx": 4,
+        "price": 617.26
+      }
+    ]
   },
   "BNBUSD": {
     "symbol": "BNBUSD",
-    "price": 485.2174
+    "price": 484.6316,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 485.0257
+      },
+      {
+        "idx": 1,
+        "price": 484.7981
+      },
+      {
+        "idx": 2,
+        "price": 484.7771
+      },
+      {
+        "idx": 3,
+        "price": 484.7771
+      },
+      {
+        "idx": 4,
+        "price": 484.6316
+      }
+    ]
   },
   "BTCUSD": {
     "symbol": "BTCUSD",
-    "price": 62432.64
+    "price": 62083.37,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 62101.64
+      },
+      {
+        "idx": 1,
+        "price": 62101.64
+      },
+      {
+        "idx": 2,
+        "price": 62101.64
+      },
+      {
+        "idx": 3,
+        "price": 62099.35
+      },
+      {
+        "idx": 4,
+        "price": 62083.37
+      }
+    ]
   },
   "COMPUSD": {
     "symbol": "COMPUSD",
-    "price": 348.16
+    "price": 351.42,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 351.82
+      },
+      {
+        "idx": 1,
+        "price": 351.82
+      },
+      {
+        "idx": 2,
+        "price": 351.82
+      },
+      {
+        "idx": 3,
+        "price": 351.82
+      },
+      {
+        "idx": 4,
+        "price": 351.42
+      }
+    ]
   },
   "CRVUSD": {
     "symbol": "CRVUSD",
-    "price": 4.915
+    "price": 4.798,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 4.807
+      },
+      {
+        "idx": 1,
+        "price": 4.807
+      },
+      {
+        "idx": 2,
+        "price": 4.807
+      },
+      {
+        "idx": 3,
+        "price": 4.807
+      },
+      {
+        "idx": 4,
+        "price": 4.798
+      }
+    ]
   },
   "DAIUSD": {
     "symbol": "DAIUSD",
-    "price": 1.0005
+    "price": 1.001,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 1.001
+      },
+      {
+        "idx": 1,
+        "price": 1.001
+      },
+      {
+        "idx": 2,
+        "price": 1.001
+      },
+      {
+        "idx": 3,
+        "price": 1.001
+      },
+      {
+        "idx": 4,
+        "price": 1.001
+      }
+    ]
   },
   "DASHUSD": {
     "symbol": "DASHUSD",
-    "price": 203.23
+    "price": 204.02,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 204.02
+      },
+      {
+        "idx": 1,
+        "price": 204.02
+      },
+      {
+        "idx": 2,
+        "price": 204.02
+      },
+      {
+        "idx": 3,
+        "price": 204.02
+      },
+      {
+        "idx": 4,
+        "price": 204.02
+      }
+    ]
   },
   "DOGEUSD": {
     "symbol": "DOGEUSD",
-    "price": 0.2696
+    "price": 0.2665,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 0.2666
+      },
+      {
+        "idx": 1,
+        "price": 0.2666
+      },
+      {
+        "idx": 2,
+        "price": 0.2666
+      },
+      {
+        "idx": 3,
+        "price": 0.2666
+      },
+      {
+        "idx": 4,
+        "price": 0.2665
+      }
+    ]
   },
   "EGLDUSD": {
     "symbol": "EGLDUSD",
-    "price": 281.7
+    "price": 279.988,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 279.988
+      },
+      {
+        "idx": 1,
+        "price": 279.988
+      },
+      {
+        "idx": 2,
+        "price": 279.988
+      },
+      {
+        "idx": 3,
+        "price": 279.988
+      },
+      {
+        "idx": 4,
+        "price": 279.988
+      }
+    ]
   },
   "ENJUSD": {
     "symbol": "ENJUSD",
-    "price": 2.0703
+    "price": 2.1068,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 2.108
+      },
+      {
+        "idx": 1,
+        "price": 2.1069
+      },
+      {
+        "idx": 2,
+        "price": 2.1085
+      },
+      {
+        "idx": 3,
+        "price": 2.1085
+      },
+      {
+        "idx": 4,
+        "price": 2.1068
+      }
+    ]
   },
   "EOSUSD": {
     "symbol": "EOSUSD",
-    "price": 4.8208
+    "price": 4.797,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 4.797
+      },
+      {
+        "idx": 1,
+        "price": 4.797
+      },
+      {
+        "idx": 2,
+        "price": 4.797
+      },
+      {
+        "idx": 3,
+        "price": 4.797
+      },
+      {
+        "idx": 4,
+        "price": 4.797
+      }
+    ]
   },
   "ETCUSD": {
     "symbol": "ETCUSD",
-    "price": 55.0713
+    "price": 54.997,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 54.997
+      },
+      {
+        "idx": 1,
+        "price": 54.997
+      },
+      {
+        "idx": 2,
+        "price": 54.997
+      },
+      {
+        "idx": 3,
+        "price": 54.997
+      },
+      {
+        "idx": 4,
+        "price": 54.997
+      }
+    ]
   },
   "ETHUSD": {
     "symbol": "ETHUSD",
-    "price": 4191.87
+    "price": 4221.86,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 4221.8
+      },
+      {
+        "idx": 1,
+        "price": 4222.16
+      },
+      {
+        "idx": 2,
+        "price": 4222.16
+      },
+      {
+        "idx": 3,
+        "price": 4222.72
+      },
+      {
+        "idx": 4,
+        "price": 4221.86
+      }
+    ]
   },
   "FILUSD": {
     "symbol": "FILUSD",
-    "price": 64.69
+    "price": 63.74,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 63.74
+      },
+      {
+        "idx": 1,
+        "price": 63.74
+      },
+      {
+        "idx": 2,
+        "price": 63.74
+      },
+      {
+        "idx": 3,
+        "price": 63.74
+      },
+      {
+        "idx": 4,
+        "price": 63.74
+      }
+    ]
   },
   "GRTUSD": {
     "symbol": "GRTUSD",
-    "price": 1.1336
+    "price": 1.1345,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 1.1337
+      },
+      {
+        "idx": 1,
+        "price": 1.1337
+      },
+      {
+        "idx": 2,
+        "price": 1.1337
+      },
+      {
+        "idx": 3,
+        "price": 1.1347
+      },
+      {
+        "idx": 4,
+        "price": 1.1345
+      }
+    ]
   },
   "HBARUSD": {
     "symbol": "HBARUSD",
-    "price": 0.4
+    "price": 0.4003,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 0.4004
+      },
+      {
+        "idx": 1,
+        "price": 0.4004
+      },
+      {
+        "idx": 2,
+        "price": 0.4004
+      },
+      {
+        "idx": 3,
+        "price": 0.4004
+      },
+      {
+        "idx": 4,
+        "price": 0.4003
+      }
+    ]
   },
   "HNTUSD": {
     "symbol": "HNTUSD",
-    "price": 21.75
+    "price": 23.1177,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 23.19
+      },
+      {
+        "idx": 1,
+        "price": 23.1185
+      },
+      {
+        "idx": 2,
+        "price": 23.1185
+      },
+      {
+        "idx": 3,
+        "price": 23.1185
+      },
+      {
+        "idx": 4,
+        "price": 23.1177
+      }
+    ]
   },
   "ICXUSD": {
     "symbol": "ICXUSD",
-    "price": 2.0747
+    "price": 2.0888,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 2.0873
+      },
+      {
+        "idx": 1,
+        "price": 2.0873
+      },
+      {
+        "idx": 2,
+        "price": 2.0873
+      },
+      {
+        "idx": 3,
+        "price": 2.0873
+      },
+      {
+        "idx": 4,
+        "price": 2.0888
+      }
+    ]
   },
   "IOTAUSD": {
     "symbol": "IOTAUSD",
-    "price": 1.4053
+    "price": 1.4204,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 1.4199
+      },
+      {
+        "idx": 1,
+        "price": 1.4199
+      },
+      {
+        "idx": 2,
+        "price": 1.4199
+      },
+      {
+        "idx": 3,
+        "price": 1.4199
+      },
+      {
+        "idx": 4,
+        "price": 1.4204
+      }
+    ]
   },
   "KNCUSD": {
     "symbol": "KNCUSD",
-    "price": 1.674
+    "price": 1.71,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 1.71
+      },
+      {
+        "idx": 1,
+        "price": 1.71
+      },
+      {
+        "idx": 2,
+        "price": 1.71
+      },
+      {
+        "idx": 3,
+        "price": 1.71
+      },
+      {
+        "idx": 4,
+        "price": 1.71
+      }
+    ]
   },
   "LINKUSD": {
     "symbol": "LINKUSD",
-    "price": 31.9053
+    "price": 33.5639,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 33.5067
+      },
+      {
+        "idx": 1,
+        "price": 33.5724
+      },
+      {
+        "idx": 2,
+        "price": 33.5673
+      },
+      {
+        "idx": 3,
+        "price": 33.5673
+      },
+      {
+        "idx": 4,
+        "price": 33.5639
+      }
+    ]
   },
   "LTCUSD": {
     "symbol": "LTCUSD",
-    "price": 194.76
+    "price": 194.0,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 194.08
+      },
+      {
+        "idx": 1,
+        "price": 194.08
+      },
+      {
+        "idx": 2,
+        "price": 194.08
+      },
+      {
+        "idx": 3,
+        "price": 194.0
+      },
+      {
+        "idx": 4,
+        "price": 194.0
+      }
+    ]
   },
   "MANAUSD": {
     "symbol": "MANAUSD",
-    "price": 0.8463
+    "price": 0.84,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 0.8407
+      },
+      {
+        "idx": 1,
+        "price": 0.8401
+      },
+      {
+        "idx": 2,
+        "price": 0.8401
+      },
+      {
+        "idx": 3,
+        "price": 0.84
+      },
+      {
+        "idx": 4,
+        "price": 0.84
+      }
+    ]
   },
   "MATICUSD": {
     "symbol": "MATICUSD",
-    "price": 1.8394
+    "price": 1.8089,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 1.8095
+      },
+      {
+        "idx": 1,
+        "price": 1.8095
+      },
+      {
+        "idx": 2,
+        "price": 1.8095
+      },
+      {
+        "idx": 3,
+        "price": 1.8088
+      },
+      {
+        "idx": 4,
+        "price": 1.8089
+      }
+    ]
   },
   "MKRUSD": {
     "symbol": "MKRUSD",
-    "price": 2502.2472
+    "price": 2525.0921,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 2526.8619
+      },
+      {
+        "idx": 1,
+        "price": 2526.8622
+      },
+      {
+        "idx": 2,
+        "price": 2526.8622
+      },
+      {
+        "idx": 3,
+        "price": 2526.8622
+      },
+      {
+        "idx": 4,
+        "price": 2525.0921
+      }
+    ]
   },
   "NANOUSD": {
     "symbol": "NANOUSD",
-    "price": 5.88
+    "price": 5.6042,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 5.6074
+      },
+      {
+        "idx": 1,
+        "price": 5.6074
+      },
+      {
+        "idx": 2,
+        "price": 5.6074
+      },
+      {
+        "idx": 3,
+        "price": 5.6074
+      },
+      {
+        "idx": 4,
+        "price": 5.6042
+      }
+    ]
   },
   "NEOUSD": {
     "symbol": "NEOUSD",
-    "price": 44.869
+    "price": 45.044,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 45.044
+      },
+      {
+        "idx": 1,
+        "price": 45.044
+      },
+      {
+        "idx": 2,
+        "price": 45.044
+      },
+      {
+        "idx": 3,
+        "price": 45.044
+      },
+      {
+        "idx": 4,
+        "price": 45.044
+      }
+    ]
   },
   "OMGUSD": {
     "symbol": "OMGUSD",
-    "price": 14.359
+    "price": 14.3587,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 14.3643
+      },
+      {
+        "idx": 1,
+        "price": 14.3643
+      },
+      {
+        "idx": 2,
+        "price": 14.3643
+      },
+      {
+        "idx": 3,
+        "price": 14.3587
+      },
+      {
+        "idx": 4,
+        "price": 14.3587
+      }
+    ]
   },
   "ONEUSD": {
     "symbol": "ONEUSD",
-    "price": 0.3604
+    "price": 0.3515,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 0.3515
+      },
+      {
+        "idx": 1,
+        "price": 0.3516
+      },
+      {
+        "idx": 2,
+        "price": 0.3516
+      },
+      {
+        "idx": 3,
+        "price": 0.3516
+      },
+      {
+        "idx": 4,
+        "price": 0.3515
+      }
+    ]
   },
   "ONTUSD": {
     "symbol": "ONTUSD",
-    "price": 0.9742
+    "price": 0.9867,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 0.9874
+      },
+      {
+        "idx": 1,
+        "price": 0.9874
+      },
+      {
+        "idx": 2,
+        "price": 0.9874
+      },
+      {
+        "idx": 3,
+        "price": 0.9874
+      },
+      {
+        "idx": 4,
+        "price": 0.9867
+      }
+    ]
   },
   "OXTUSD": {
     "symbol": "OXTUSD",
-    "price": 0.4507
+    "price": 0.4481,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 0.447
+      },
+      {
+        "idx": 1,
+        "price": 0.447
+      },
+      {
+        "idx": 2,
+        "price": 0.447
+      },
+      {
+        "idx": 3,
+        "price": 0.447
+      },
+      {
+        "idx": 4,
+        "price": 0.4481
+      }
+    ]
   },
   "PAXGUSD": {
     "symbol": "PAXGUSD",
-    "price": 1806.56
+    "price": 1797.02,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 1796.93
+      },
+      {
+        "idx": 1,
+        "price": 1796.93
+      },
+      {
+        "idx": 2,
+        "price": 1796.93
+      },
+      {
+        "idx": 3,
+        "price": 1796.93
+      },
+      {
+        "idx": 4,
+        "price": 1797.02
+      }
+    ]
   },
   "QTUMUSD": {
     "symbol": "QTUMUSD",
-    "price": 13.393
+    "price": 13.421,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 13.421
+      },
+      {
+        "idx": 1,
+        "price": 13.421
+      },
+      {
+        "idx": 2,
+        "price": 13.421
+      },
+      {
+        "idx": 3,
+        "price": 13.421
+      },
+      {
+        "idx": 4,
+        "price": 13.421
+      }
+    ]
   },
   "REPUSD": {
     "symbol": "REPUSD",
-    "price": 24.1
+    "price": 24.28,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 24.28
+      },
+      {
+        "idx": 1,
+        "price": 24.28
+      },
+      {
+        "idx": 2,
+        "price": 24.28
+      },
+      {
+        "idx": 3,
+        "price": 24.28
+      },
+      {
+        "idx": 4,
+        "price": 24.28
+      }
+    ]
   },
   "RVNUSD": {
     "symbol": "RVNUSD",
-    "price": 0.1213
+    "price": 0.1226,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 0.1226
+      },
+      {
+        "idx": 1,
+        "price": 0.1226
+      },
+      {
+        "idx": 2,
+        "price": 0.1226
+      },
+      {
+        "idx": 3,
+        "price": 0.1226
+      },
+      {
+        "idx": 4,
+        "price": 0.1226
+      }
+    ]
   },
   "SOLUSD": {
     "symbol": "SOLUSD",
-    "price": 207.0159
+    "price": 207.9082,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 208.0754
+      },
+      {
+        "idx": 1,
+        "price": 208.0531
+      },
+      {
+        "idx": 2,
+        "price": 208.0531
+      },
+      {
+        "idx": 3,
+        "price": 208.1065
+      },
+      {
+        "idx": 4,
+        "price": 207.9082
+      }
+    ]
   },
   "STORJUSD": {
     "symbol": "STORJUSD",
-    "price": 1.3233
+    "price": 1.3501,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 1.3501
+      },
+      {
+        "idx": 1,
+        "price": 1.3501
+      },
+      {
+        "idx": 2,
+        "price": 1.3501
+      },
+      {
+        "idx": 3,
+        "price": 1.3501
+      },
+      {
+        "idx": 4,
+        "price": 1.3501
+      }
+    ]
   },
   "SUSHIUSD": {
     "symbol": "SUSHIUSD",
-    "price": 11.735
+    "price": 11.439,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 11.439
+      },
+      {
+        "idx": 1,
+        "price": 11.439
+      },
+      {
+        "idx": 2,
+        "price": 11.439
+      },
+      {
+        "idx": 3,
+        "price": 11.439
+      },
+      {
+        "idx": 4,
+        "price": 11.439
+      }
+    ]
   },
   "UNIUSD": {
     "symbol": "UNIUSD",
-    "price": 28.2878
+    "price": 27.7024,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 27.706
+      },
+      {
+        "idx": 1,
+        "price": 27.706
+      },
+      {
+        "idx": 2,
+        "price": 27.706
+      },
+      {
+        "idx": 3,
+        "price": 27.706
+      },
+      {
+        "idx": 4,
+        "price": 27.7024
+      }
+    ]
   },
   "VETUSD": {
     "symbol": "VETUSD",
-    "price": 0.1434
+    "price": 0.1461,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 0.1461
+      },
+      {
+        "idx": 1,
+        "price": 0.1461
+      },
+      {
+        "idx": 2,
+        "price": 0.1459
+      },
+      {
+        "idx": 3,
+        "price": 0.1461
+      },
+      {
+        "idx": 4,
+        "price": 0.1461
+      }
+    ]
   },
   "VTHOUSD": {
     "symbol": "VTHOUSD",
-    "price": 0.0097
+    "price": 0.01,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 0.01
+      },
+      {
+        "idx": 1,
+        "price": 0.01
+      },
+      {
+        "idx": 2,
+        "price": 0.01
+      },
+      {
+        "idx": 3,
+        "price": 0.01
+      },
+      {
+        "idx": 4,
+        "price": 0.01
+      }
+    ]
   },
   "WAVESUSD": {
     "symbol": "WAVESUSD",
-    "price": 28.7295
+    "price": 29.0873,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 29.0873
+      },
+      {
+        "idx": 1,
+        "price": 29.0873
+      },
+      {
+        "idx": 2,
+        "price": 29.0873
+      },
+      {
+        "idx": 3,
+        "price": 29.0873
+      },
+      {
+        "idx": 4,
+        "price": 29.0873
+      }
+    ]
   },
   "XLMUSD": {
     "symbol": "XLMUSD",
-    "price": 0.3809
+    "price": 0.3808,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 0.3811
+      },
+      {
+        "idx": 1,
+        "price": 0.3811
+      },
+      {
+        "idx": 2,
+        "price": 0.3811
+      },
+      {
+        "idx": 3,
+        "price": 0.3811
+      },
+      {
+        "idx": 4,
+        "price": 0.3808
+      }
+    ]
   },
   "XTZUSD": {
     "symbol": "XTZUSD",
-    "price": 6.9022
+    "price": 6.9807,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 6.9807
+      },
+      {
+        "idx": 1,
+        "price": 6.9807
+      },
+      {
+        "idx": 2,
+        "price": 6.9807
+      },
+      {
+        "idx": 3,
+        "price": 6.9807
+      },
+      {
+        "idx": 4,
+        "price": 6.9807
+      }
+    ]
   },
   "ZECUSD": {
     "symbol": "ZECUSD",
-    "price": 165.81
+    "price": 165.91,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 166.37
+      },
+      {
+        "idx": 1,
+        "price": 166.37
+      },
+      {
+        "idx": 2,
+        "price": 166.37
+      },
+      {
+        "idx": 3,
+        "price": 166.37
+      },
+      {
+        "idx": 4,
+        "price": 165.91
+      }
+    ]
   },
   "ZENUSD": {
     "symbol": "ZENUSD",
-    "price": 85.943
+    "price": 86.132,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 86.132
+      },
+      {
+        "idx": 1,
+        "price": 86.132
+      },
+      {
+        "idx": 2,
+        "price": 86.132
+      },
+      {
+        "idx": 3,
+        "price": 86.132
+      },
+      {
+        "idx": 4,
+        "price": 86.132
+      }
+    ]
   },
   "ZILUSD": {
     "symbol": "ZILUSD",
-    "price": 0.1115
+    "price": 0.1104,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 0.1103
+      },
+      {
+        "idx": 1,
+        "price": 0.1103
+      },
+      {
+        "idx": 2,
+        "price": 0.1103
+      },
+      {
+        "idx": 3,
+        "price": 0.1103
+      },
+      {
+        "idx": 4,
+        "price": 0.1104
+      }
+    ]
   },
   "ZRXUSD": {
     "symbol": "ZRXUSD",
-    "price": 1.0718
+    "price": 1.0857,
+    "priceTrends": [
+      {
+        "idx": 0,
+        "price": 1.0857
+      },
+      {
+        "idx": 1,
+        "price": 1.0857
+      },
+      {
+        "idx": 2,
+        "price": 1.0857
+      },
+      {
+        "idx": 3,
+        "price": 1.0857
+      },
+      {
+        "idx": 4,
+        "price": 1.0857
+      }
+    ]
   }
 }
