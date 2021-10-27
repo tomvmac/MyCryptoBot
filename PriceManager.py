@@ -4,6 +4,7 @@ import Constants
 import BinanceClient
 import Trader
 import PriceTrends
+import Logger
 
 def loadBinanceCoins():
     with open(Constants.BINANCE_COINS_JSON_PATH, "r") as j:
@@ -116,6 +117,16 @@ def hasSellCriteriaMet(priceItem, coinsDict):
 
     # Sell when either Stop Loss or Down Trend is occurring
     if isStopLoss is True or isDownTrending is True or isTakeProfit is True:
+        Logger.GetLogger().info("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+        Logger.GetLogger().info("Criteria to Sell: " + priceItem["symbol"])
+        Logger.GetLogger().info("Buy Price: " + prevPrice)
+        Logger.GetLogger().info("Sell Price: " + currPrice)
+        Logger.GetLogger().info("PriceTrends - {x}".format(x=coinsDict[priceItem["symbol"]]["priceTrends"]))
+        Logger.GetLogger().info("isStopLoss: " + isStopLoss)
+        Logger.GetLogger().info("isDownTrending: " + isDownTrending)
+        Logger.GetLogger().info("isTakeProfit: " + isTakeProfit)
+        Logger.GetLogger().info("percentageGainLoss: " + percentageGainLoss)
+        Logger.GetLogger().info("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
         return True
 
     return False
