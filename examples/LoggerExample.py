@@ -15,10 +15,12 @@ consoleHandler.setLevel(logging.INFO)
 logger.addHandler(fileHandler)
 logger.addHandler(consoleHandler)
 
-logger.info('Hello Tom')
+price = 4.99
+isStupid = False
 
-time.sleep(3)
-logger.info('Hello Again')
+logger.info('Hello Tom ' + str(price))
+
+logger.info('Hello Again ' + str(isStupid))
 
 time.sleep(5)
 logger.info('Bye')
