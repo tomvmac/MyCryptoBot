@@ -10,6 +10,10 @@ print(wallet)
 # wallet = WalletManager.deleteWalletItem(wallet, item)
 # print(wallet)
 
+# Get Total Balance
+print(WalletManager.getTotalWalletBalance())
+
+
 
 # Update item on wallet
 itemToUpdate1 = {

@@ -19,6 +19,26 @@ def loadWallet():
 
     return wallet
 
+def getTotalWalletBalance():
+    totalWalletBalance = 0
+
+    with open(Constants.WALLET_JSON_PATH, "r") as j:
+        wallet = json.load(j)
+    j.close()
+
+    # Get latest prices
+    coins = PriceManager.updateBinanceCoinsWithLatestPrices()
+
+    for item in wallet:
+        if item["symbol"] == "USD":
+            totalWalletBalance += item["price"] * item["qty"]
+
+        if item["symbol"] in coins:
+            item["price"] = coins[item["symbol"]]["price"]
+            totalWalletBalance += item["price"] * item["qty"]
+
+    return totalWalletBalance
+
 def updateWalletItem(wallet, itemToUpdate):
     isItemInWallet = False
 
