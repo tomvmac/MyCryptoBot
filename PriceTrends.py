@@ -15,10 +15,18 @@ def isDownTrend(priceTrends):
                 trends.append(1)
 
     # Process Trend
-    for y in range(0, len(trends)-1):
-        if trends[y + 1]:
-            if trends[y] + trends[y+1] > Constants.PRICE_TRENDS_MIN_CONSECUTIVE_ITEMS - 2:
-                return True
+    # Process Trend
+    currentConsecutiveDips = 0
+    for y in range(0, len(trends)):
+
+        if trends[y] == 1:
+            currentConsecutiveDips += 1
+        else:
+            if y > 0:
+                currentConsecutiveDips -= 1
+
+    if currentConsecutiveDips >= Constants.PRICE_TRENDS_MIN_CONSECUTIVE_ITEMS:
+        return True
 
     return False
 
