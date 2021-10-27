@@ -7,8 +7,10 @@ import PriceManager
 
 def executeProcess():
     # Get BTC Price
-    price = PriceManager.getCurrentPrice("BTCUSD")
-    PriceManager.printPrice(price)
+    # price = PriceManager.getCurrentPrice("BTCUSD")
+    # PriceManager.printPrice(price)
+
+    PriceManager.processPrices()
 
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------------------------

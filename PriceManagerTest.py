@@ -1,9 +1,15 @@
 import PriceManager
 
 # Load Binance Coins from file
-# print(PriceManager.loadBinanceCoins())
+# coinsDict = PriceManager.loadBinanceCoins()
+# print(coinsDict)
 
-# Load Binance Coins with latest prices and update json file
-print(PriceManager.updateBinanceCoinsWithLatestPrices())
+# Load Current Prices
+# prices = PriceManager.getCurrentPrices()
+# print(prices)
+
+# Update Current Prices to CoinsDict
+# PriceManager.updateBinanceCoinsWithLatestPrices()
 
 # Process Prices
+PriceManager.processPrices()

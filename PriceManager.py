@@ -78,7 +78,13 @@ def generateSell(priceItem, coinsDict):
         Trader.closeTrade(tradeItem)
     return
 
-def processPrices(prices, coinsDict):
+def processPrices():
+    # Load Binance Coins from file
+    coinsDict = loadBinanceCoins()
+
+    # Get Current Prices
+    prices = getCurrentPrices()
+
     # Loop through prices and match coinsDict
     for priceItem in prices:
         if priceItem["symbol"] in coinsDict:
@@ -86,6 +92,10 @@ def processPrices(prices, coinsDict):
             generateBuy(priceItem, coinsDict)
             # Generate Sells
             generateSell(priceItem, coinsDict)
+
+    # Update coinsDict with latest prices
+    updateBinanceCoinsWithLatestPrices()
+
     return
 
 
