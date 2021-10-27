@@ -61,11 +61,6 @@ def printPrices(prices, coinsDict):
             print('price:', price['price'])
             print('\n------------')
 
-def percentGainLoss(prevPrice, currPrice):
-    percentageGainLoss = ((currPrice - prevPrice) / prevPrice) * 100
-    return percentageGainLoss
-
-
 def hasBuyCriteriaMet(priceItem, coinsDict):
     # Check if symbol is in open trades, if so skip
     openTrades = Trader.loadOpenTrades()
@@ -78,7 +73,7 @@ def hasBuyCriteriaMet(priceItem, coinsDict):
     prevPrice = coinsDict[priceItem["symbol"]]["price"]
     currPrice = priceItem["price"]
 
-    if percentGainLoss(prevPrice, currPrice) > Constants.MIN_PERCENTAGE_GAIN_TO_BUY:
+    if PriceTrends.percentGainLoss(prevPrice, currPrice) > Constants.MIN_PERCENTAGE_GAIN_TO_BUY:
         hasPercentageGainMet = True
 
     # Price Trends should not be downward trending
@@ -104,7 +99,7 @@ def hasSellCriteriaMet(priceItem, coinsDict):
 
     prevPrice = currTrade["price"]
     currPrice = priceItem["price"]
-    percentageGainLoss = percentGainLoss(prevPrice, currPrice)
+    percentageGainLoss = PriceTrends.percentGainLoss(prevPrice, currPrice)
 
     # Take Profit
     isTakeProfit = False

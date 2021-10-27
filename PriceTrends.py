@@ -1,5 +1,9 @@
 import Constants
 
+def percentGainLoss(prevPrice, currPrice):
+    percentageGainLoss = ((currPrice - prevPrice) / prevPrice) * 100
+    return percentageGainLoss
+
 def isDownTrend(priceTrends):
     trends = []
 
@@ -8,14 +12,21 @@ def isDownTrend(priceTrends):
 
     for x in range(0, len(priceTrends)-1):
         #  Collect Trend
+        currPrice = 0
+        prevPrice = 0
+        percentageGainLoss = 0
         if priceTrends[x + 1]["price"]:
-            if priceTrends[x+1]["price"] >= priceTrends[x]["price"]:
-                trends.append(0)
-            else:
+            currPrice = priceTrends[x+1]["price"]
+            prevPrice = priceTrends[x]["price"]
+            percentageGainLoss = percentGainLoss(prevPrice, currPrice)
+            if percentageGainLoss <= Constants.PRICE_TRENDS_DOWNTREND_PERCENTAGE_THRESHOLD:
                 trends.append(1)
+            else:
+                trends.append(0)
 
-    # Process Trend
-    # Process Trend
+    print(trends)
+
+    # Process Trend 0 is no dip, 1 is a dip
     currentConsecutiveDips = 0
     for y in range(0, len(trends)):
 
