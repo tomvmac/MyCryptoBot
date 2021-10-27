@@ -20,10 +20,10 @@ def updateBinanceCoinsWithLatestPrices():
     # iterate through prices, if price symbol and coin symbol equal, set price
     for price in prices:
         if price["symbol"] in coins:
-            coins[price["symbol"]]["price"] = float(price["price"])
+            coins[price["symbol"]]["price"] = price["price"]
             #  Add to PriceTrends
             priceTrends = coins[price["symbol"]]["priceTrends"]
-            priceTrends = PriceTrends.addPriceTrend(priceTrends, {"idx": 0, "price": float(price["price"])})
+            priceTrends = PriceTrends.addPriceTrend(priceTrends, {"idx": 0, "price": price["price"]})
             coins[price["symbol"]]["priceTrends"] = priceTrends
 
     # Update coins to file
@@ -35,11 +35,18 @@ def updateBinanceCoinsWithLatestPrices():
 
 def getCurrentPrice(symbol):
     client = BinanceClient.getClient()
-    return client.get_symbol_ticker(symbol=symbol)
+    price = client.get_symbol_ticker(symbol=symbol)
+    price["price"] = float(price["price"])
+
+    return price
 
 def getCurrentPrices():
     client = BinanceClient.getClient()
-    return client.get_symbol_ticker()
+    prices = client.get_symbol_ticker()
+    for price in prices:
+        price["price"] = float(price["price"])
+
+    return prices
 
 
 def printPrice(price):
@@ -54,17 +61,74 @@ def printPrices(prices, coinsDict):
             print('price:', price['price'])
             print('\n------------')
 
+def percentGainLoss(prevPrice, currPrice):
+    percentageGainLoss = ((currPrice - prevPrice) / prevPrice) * 100
+    return percentageGainLoss
+
+
 def hasBuyCriteriaMet(priceItem, coinsDict):
-    return
+    # Check if symbol is in open trades, if so skip
+    openTrades = Trader.loadOpenTrades()
+    for openTrade in openTrades:
+        if priceItem["symbol"] == openTrade["symbol"]:
+            return False
+
+    # Percentage Gain Criteria
+    hasPercentageGainMet = False
+    prevPrice = coinsDict[priceItem["symbol"]]["price"]
+    currPrice = priceItem["price"]
+
+    if percentGainLoss(prevPrice, currPrice) > Constants.MIN_PERCENTAGE_GAIN_TO_BUY:
+        hasPercentageGainMet = True
+
+    # Price Trends should not be downward trending
+    isDownTrending = PriceTrends.isDownTrend(coinsDict[priceItem["symbol"]]["priceTrends"])
+
+    if hasPercentageGainMet is True and isDownTrending is False:
+        return True
+
+    return False
 
 
 def hasSellCriteriaMet(priceItem, coinsDict):
-    return
+    # Check if symbol is in open trades, if so skip
+    openTrades = Trader.loadOpenTrades()
+    currTrade = {}
+
+    for openTrade in openTrades:
+        if priceItem["symbol"] == openTrade["symbol"]:
+            currTrade = openTrade
+
+    if len(openTrades) == 0 or currTrade == {}:
+        return False
+
+    prevPrice = currTrade["price"]
+    currPrice = priceItem["price"]
+    percentageGainLoss = percentGainLoss(prevPrice, currPrice)
+
+    # Take Profit
+    isTakeProfit = False
+    if percentageGainLoss >= Constants.TAKE_PROFIT_PERCENTAGE_GAIN:
+        isTakeProfit = True
+
+    # Stop Loss
+    isStopLoss = False
+    if percentageGainLoss <= Constants.STOP_LOSS_PERCENTAGE:
+        isStopLoss = True
+
+    # Price Trends should not be downward trending
+    isDownTrending = PriceTrends.isDownTrend(coinsDict[priceItem["symbol"]]["priceTrends"])
+
+    # Sell when either Stop Loss or Down Trend is occurring
+    if isStopLoss is True or isDownTrending is True or isTakeProfit is True:
+        return True
+
+    return False
 
 
 def generateBuy(priceItem, coinsDict):
     tradeItem = {}
-    if hasBuyCriteriaMet((priceItem, coinsDict)):
+    if hasBuyCriteriaMet(priceItem, coinsDict):
         # Open Trade
         tradeItem = Trader.createTradeItem(priceItem, coinsDict)
         Trader.openTrade(tradeItem)
@@ -72,7 +136,7 @@ def generateBuy(priceItem, coinsDict):
 
 def generateSell(priceItem, coinsDict):
     tradeItem = {}
-    if hasSellCriteriaMet((priceItem, coinsDict)):
+    if hasSellCriteriaMet(priceItem, coinsDict):
         # Close Trade
         tradeItem = Trader.createTradeItem(priceItem, coinsDict)
         Trader.closeTrade(tradeItem)

@@ -4,12 +4,12 @@ import PriceManager
 trade1 = {"symbol": "CRVUSD", "type": "BUY", "tradeDate": "", "tradeTime": "", "status": "OPEN", "price": 4.00, "qty": 10}
 
 # Open Trades
-# print(Trader.openTrade(trade1))
+print(Trader.openTrade(trade1))
 
 
 # Close Trades
 closeTrade = {"symbol": "CRVUSD", "type": "BUY", "tradeDate": "10/25/2021", "tradeTime": "14:57:52", "status": "OPEN", "price": 4.82, "qty": 10}
-print(Trader.closeTrade(closeTrade))
+# print(Trader.closeTrade(closeTrade))
 
 # --------------------------------------------------------------------------------------------------------------------------------------------------
 

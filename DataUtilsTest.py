@@ -1,0 +1,4 @@
+import DataUtils
+
+
+DataUtils.resetAllJsonFiles()
