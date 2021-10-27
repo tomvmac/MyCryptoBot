@@ -24,7 +24,7 @@ def isDownTrend(priceTrends):
             else:
                 trends.append(0)
 
-    print(trends)
+    # print(trends)
 
     # Process Trend 0 is no dip, 1 is a dip
     currentConsecutiveDips = 0
