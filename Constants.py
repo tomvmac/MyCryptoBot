@@ -16,6 +16,9 @@ WALLET_JSON_PATH = "data/Wallet.json"
 OPEN_TRADES_JSON_PATH = "data/OpenTrades.json"
 CLOSED_TRADES_JSON_PATH = "data/ClosedTrades.json"
 
+# Log Files
+APP_LOG_FILE_PATH = "logs/app.log"
+
 
 # Scheduling Parameters
 SCHEDULE_EXECUTION_INTERVAL_IN_MINUTES = 15

@@ -7,7 +7,16 @@ def writeToFile(data, fileName):
         json.dump(data, k)
     k.close()
 
-def resetAllJsonFiles():
+def truncateFile(fileName):
+    with open(fileName, "w") as k:
+        k.truncate(0)
+    k.close()
+
+
+def resetAllFiles():
+    # Clear Log Files
+    truncateFile(Constants.APP_LOG_FILE_PATH)
+
     # Open Trades
     openTrades = []
     writeToFile(openTrades, Constants.OPEN_TRADES_JSON_PATH)

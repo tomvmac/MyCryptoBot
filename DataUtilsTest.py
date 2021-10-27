@@ -1,4 +1,4 @@
 import DataUtils
 
 
-DataUtils.resetAllJsonFiles()
+DataUtils.resetAllFiles()
