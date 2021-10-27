@@ -1,4 +1,0 @@
-import DataUtils
-
-
-DataUtils.resetAllFiles()

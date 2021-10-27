@@ -1,10 +1,12 @@
 import time
 from datetime import datetime
+import pytz
+import Constants
 
 def getCurrentDate():
-    return time.strftime("%m/%d/%Y")
+    return time.strftime(Constants.DATE_FORMAT)
 
 def getCurrentTime():
-    now = datetime.now()
-    return now.strftime("%H:%M:%S")
+    now = datetime.now(pytz.timezone(Constants.TIME_ZONE_EDT)).strftime(Constants.TIME_FORMAT)
+    return now
 

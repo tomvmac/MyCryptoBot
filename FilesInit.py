@@ -13,7 +13,7 @@ def truncateFile(fileName):
     k.close()
 
 
-def resetAllFiles():
+def initializeFiles():
     # Clear Log Files
     truncateFile(Constants.APP_LOG_FILE_PATH)
 
