@@ -31,11 +31,20 @@ priceTrends6 = [{"idx": 0, "price": 120.20}, {"idx": 1, "price": 123.23}, {"idx"
 priceTrends7 = [{"idx": 0, "price": 120.20}, {"idx": 1, "price": 123.90}, {"idx": 2, "price": 123.20}, {"idx": 3, "price": 122.40}, {"idx": 4, "price": 121.50}, {"idx": 5, "price": 125.25}, {"idx": 6, "price": 120.20}]  # Down - Big Enough Changes / True
 
 
+# print(PriceTrends.isDownTrend(priceTrends1))
+# print(PriceTrends.isDownTrend(priceTrends2))
+# print(PriceTrends.isDownTrend(priceTrends3))
+# print(PriceTrends.isDownTrend(priceTrends4))
+# print(PriceTrends.isDownTrend(priceTrends5))
+# print(PriceTrends.isDownTrend(priceTrends6))
+# print(PriceTrends.isDownTrend(priceTrends7))
 
-print(PriceTrends.isDownTrend(priceTrends1))
-print(PriceTrends.isDownTrend(priceTrends2))
-print(PriceTrends.isDownTrend(priceTrends3))
-print(PriceTrends.isDownTrend(priceTrends4))
-print(PriceTrends.isDownTrend(priceTrends5))
-print(PriceTrends.isDownTrend(priceTrends6))
-print(PriceTrends.isDownTrend(priceTrends7))
+#2021-10-28 18:12:46,014 - PriceTrends - [{'idx': 0, 'price': 0.3529}, {'idx': 1, 'price': 0.3529}, {'idx': 2, 'price': 0.3481}, {'idx': 3, 'price': 0.3439}, {'idx': 4, 'price': 0.3439}]
+#2021-10-28 18:12:46,014 - PriceTrends - [{'idx': 0, 'price': 0.3529}, {'idx': 1, 'price': 0.3529}, {'idx': 2, 'price': 0.3481}, {'idx': 3, 'price': 0.3439}, {'idx': 4, 'price': 0.3439}]
+
+priceTrendsA = [{'idx': 0, 'price': 0.3529}, {'idx': 1, 'price': 0.3489}, {'idx': 2, 'price': 0.3471}, {'idx': 3, 'price': 0.3439}, {'idx': 4, 'price': 0.3439}]
+print(PriceTrends.isDownTrend(priceTrendsA))
+
+
+priceTrendsB = [{'idx': 0, 'price': 0.3529}, {'idx': 1, 'price': 0.3529}, {'idx': 2, 'price': 0.3481}, {'idx': 3, 'price': 0.3439}, {'idx': 4, 'price': 0.3439}]
+print(PriceTrends.isDownTrend(priceTrendsB))

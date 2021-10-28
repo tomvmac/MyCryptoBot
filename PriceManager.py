@@ -98,7 +98,7 @@ def hasSellCriteriaMet(priceItem, coinsDict):
 
     prevPrice = currTrade["price"]
     currPrice = priceItem["price"]
-    percentageGainLoss = 0.00
+    percentageGainLoss = 0.0000
     percentageGainLoss = PriceTrends.percentGainLoss(prevPrice, currPrice)
 
     # Take Profit

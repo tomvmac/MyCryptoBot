@@ -14,7 +14,7 @@ def isDownTrend(priceTrends):
         #  Collect Trend
         currPrice = 0
         prevPrice = 0
-        percentageGainLoss = 0
+        percentageGainLoss = 0.0000
         if priceTrends[x + 1]["price"]:
             currPrice = priceTrends[x+1]["price"]
             prevPrice = priceTrends[x]["price"]
@@ -29,15 +29,14 @@ def isDownTrend(priceTrends):
     # Process Trend 0 is no dip, 1 is a dip
     currentConsecutiveDips = 0
     for y in range(0, len(trends)):
+        if currentConsecutiveDips >= Constants.PRICE_TRENDS_MIN_CONSECUTIVE_ITEMS:
+            return True
 
         if trends[y] == 1:
             currentConsecutiveDips += 1
         else:
             if y > 0:
                 currentConsecutiveDips -= 1
-
-    if currentConsecutiveDips >= Constants.PRICE_TRENDS_MIN_CONSECUTIVE_ITEMS:
-        return True
 
     return False
 
