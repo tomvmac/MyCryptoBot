@@ -2,48 +2,119 @@ import os
 import json
 
 from binance.client import Client
+from binance.exceptions import BinanceAPIException, BinanceOrderException
+from binance.enums import *
+
+def initializeCoinsDict():
+    # init coinsDict
+    coinsDict = {}
+    with open("files/testcoins.json", "r") as j:
+        data = json.load(j)
+
+    for dataElement in data:
+        coinsDict[dataElement["symbol"]] = 0
+
+    # print(coinsDict)
+    return coinsDict
+
+def initializeTestBinanceClient():
+    # init
+
+    # API key and secret
+    TEST_BINANCE_API_KEY = os.environ.get('TEST_BINANCE_API_KEY')
+    TEST_BINANCE_SECRET = os.environ.get('TEST_BINANCE_SECRET')
+
+    api_key = TEST_BINANCE_API_KEY
+    api_secret = TEST_BINANCE_SECRET
+    client = Client(api_key, api_secret, testnet=True)
+
+    # API URLs
+    TEST_BINANCE_API_URL = 'https://testnet.binance.vision/api'
+
+    client.API_URL = TEST_BINANCE_API_URL
+    return client
+
+def getAccountInfo():
+    # get balances for all assets & some account information
+    return client.get_account()
+
+def getBalance(symbol):
+    # get balance for a specific asset only (BTC)
+    return client.get_asset_balance(asset=symbol)
+
+def getPrice(symbol):
+    # get balance for a specific asset only (BTC)
+    return client.get_symbol_ticker(symbol=symbol)
+
+def getPrices():
+    # get latest price from Binance API
+    prices = client.get_symbol_ticker()
+    return prices
+
+def printPrices(prices, coinsDict):
+    # loop through prices
+    for price in prices:
+        if price['symbol'] in coinsDict:
+            print('symbol:', price['symbol'])
+            print('price:', price['price'])
+            print('------------')
+
+def buyMarketOrder(symbol, qty):
+    # create a real order if the test orders did not raise an exception
+
+    try:
+        order = client.order_market_buy(symbol=symbol,quantity=qty)
+        return order
+
+    except BinanceAPIException as e:
+        # error handling goes here
+        print(e)
+    except BinanceOrderException as e:
+        # error handling goes here
+        print(e)
 
 
+def sellMarketOrder(symbol, qty):
+    # create a real order if the test orders did not raise an exception
 
-# init coinsDict
-coinsDict = {}
-with open("files/testcoins.json", "r") as j:
-	data = json.load(j)
+    try:
+        order = client.order_market_sell(symbol=symbol,quantity=qty)
+        return order
 
-for dataElement in data:
-	coinsDict[dataElement["symbol"]] = 0
+    except BinanceAPIException as e:
+        # error handling goes here
+        print(e)
+    except BinanceOrderException as e:
+        # error handling goes here
+        print(e)
 
-# print(coinsDict)
 
-# init
+# -------------------------------------------------------------------------------------------------------
 
-# API key and secret
-TEST_BINANCE_API_KEY = os.environ.get('test_binance_api_key')
-TEST_BINANCE_SECRET = os.environ.get('test_binance_secret')
+# Initialize
+coinsDict = initializeCoinsDict()
 
-api_key = TEST_BINANCE_API_KEY
-api_secret = TEST_BINANCE_SECRET
-client = Client(api_key, api_secret)
+# Init Client
+client = initializeTestBinanceClient()
 
-# API URLs
-TEST_BINANCE_API_URL = 'https://testnet.binance.vision/api'
+# Get Account Info
+print(getAccountInfo())
 
-client.API_URL = TEST_BINANCE_API_URL
+# Get Balance for a symbol
+print("----------------")
+print(getBalance("BTC"))
+print("----------------")
 
-# get balances for all assets & some account information
-# print(client.get_account())
+# Get Price
+# print(getPrice("BTCUSDT"))
 
-# get balance for a specific asset only (BTC)
-# print(client.get_asset_balance(asset='BTC'))
+# Get Prices
+# prices = getPrices()
+# print(prices)
+# printPrices(prices, coinsDict)
 
-# get latest price from Binance API
-prices = client.get_symbol_ticker()
-# print full output (dictionary)
-#print(prices)
-# loop through prices
-for price in prices:
-    if price['symbol'] in coinsDict:
-        print('symbol:', price['symbol'])
-        print('price:', price['price'])
-        print('------------')
+# Buy Market Order
+# print(buyMarketOrder("BTCUSDT", 0.1))
 
+# Sell Market Order
+# print(sellMarketOrder("BTCUSDT", 0.5))

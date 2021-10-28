@@ -35,15 +35,13 @@ def updateBinanceCoinsWithLatestPrices():
     return coins
 
 def getCurrentPrice(symbol):
-    client = BinanceClient.getClient()
-    price = client.get_symbol_ticker(symbol=symbol)
+    price = BinanceClient.getPrice(symbol)
     price["price"] = float(price["price"])
 
     return price
 
 def getCurrentPrices():
-    client = BinanceClient.getClient()
-    prices = client.get_symbol_ticker()
+    prices = BinanceClient.getPrices()
     for price in prices:
         price["price"] = float(price["price"])
 
