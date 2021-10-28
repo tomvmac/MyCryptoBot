@@ -23,7 +23,7 @@ print("----------------")
 
 
 # Buy Market Order
-# print(buyMarketOrder("BTCUSDT", 0.1))
+# print(BinanceClient.buyMarketOrder("ONEUSD", 500))
 
 # Sell Market Order
-# print(sellMarketOrder("BTCUSDT", 0.5))
+# print(BinanceClient.sellMarketOrder("USDTUSD", 50))
