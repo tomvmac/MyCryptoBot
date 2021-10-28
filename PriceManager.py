@@ -35,10 +35,11 @@ def updateBinanceCoinsWithLatestPrices():
     return coins
 
 def getCurrentPrice(symbol):
+    currentPrice = 0.00
     price = BinanceClient.getPrice(symbol)
-    price["price"] = float(price["price"])
+    currentPrice = float(price["price"])
 
-    return price
+    return currentPrice
 
 def getCurrentPrices():
     prices = BinanceClient.getPrices()
