@@ -98,6 +98,7 @@ def hasSellCriteriaMet(priceItem, coinsDict):
 
     prevPrice = currTrade["price"]
     currPrice = priceItem["price"]
+    percentageGainLoss = 0.00
     percentageGainLoss = PriceTrends.percentGainLoss(prevPrice, currPrice)
 
     # Take Profit
@@ -117,13 +118,13 @@ def hasSellCriteriaMet(priceItem, coinsDict):
     if isStopLoss is True or isDownTrending is True or isTakeProfit is True:
         Logger.GetLogger().info("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
         Logger.GetLogger().info("Criteria to Sell: " + priceItem["symbol"])
-        Logger.GetLogger().info("Buy Price: " + str(prevPrice))
-        Logger.GetLogger().info("Sell Price: " + str(currPrice))
+        Logger.GetLogger().info("Buy Price: {x}".format(x=prevPrice))
+        Logger.GetLogger().info("Sell Price: {x}".format(x=currPrice))
         Logger.GetLogger().info("PriceTrends - {x}".format(x=coinsDict[priceItem["symbol"]]["priceTrends"]))
-        Logger.GetLogger().info("isStopLoss: " + str(isStopLoss))
-        Logger.GetLogger().info("isDownTrending: " + str(isDownTrending))
-        Logger.GetLogger().info("isTakeProfit: ", str(isTakeProfit))
-        Logger.GetLogger().info("percentageGainLoss: ",  str(percentageGainLoss))
+        Logger.GetLogger().info("isStopLoss:  {x}".format(x=isStopLoss))
+        Logger.GetLogger().info("isDownTrending: {x}".format(x=isDownTrending))
+        Logger.GetLogger().info("isTakeProfit: {x}".format(x=isTakeProfit))
+        Logger.GetLogger().info("percentageGainLoss: {x}".format(x=percentageGainLoss))
         Logger.GetLogger().info("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
         return True
 
