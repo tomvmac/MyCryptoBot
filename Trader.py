@@ -3,6 +3,7 @@ import Constants
 import DateTimeUtils
 import Logger
 import WalletManager
+import PriceManager
 
 
 def loadOpenTrades():
@@ -37,6 +38,7 @@ def openTrade(trade):
     trade["type"] = "BUY"
     trade["tradeDate"] = DateTimeUtils.getCurrentDate()
     trade["tradeTime"] = DateTimeUtils.getCurrentTime()
+    trade["price"] = PriceManager.getCurrentPrice(trade["symbol"])
 
     # Load OpenTrades.json
     openTrades = {}
@@ -95,6 +97,7 @@ def closeTrade(trade):
     trade["tradeTime"] = DateTimeUtils.getCurrentTime()
     trade["type"] = "SELL"
     trade["status"] = "CLOSED"
+    trade["price"] = PriceManager.getCurrentPrice(trade["symbol"])
 
     # Load open and closed trades
     with open(Constants.OPEN_TRADES_JSON_PATH, "r") as j:
