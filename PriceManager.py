@@ -136,7 +136,7 @@ def generateBuy(priceItem, coinsDict):
     tradeItem = {}
     if hasBuyCriteriaMet(priceItem, coinsDict):
         # Open Trade
-        tradeItem = Trader.createTradeItem(priceItem, coinsDict)
+        tradeItem = Trader.createBuyTradeItem(priceItem, coinsDict)
         Trader.openTrade(tradeItem)
     return
 
@@ -144,7 +144,7 @@ def generateSell(priceItem, coinsDict):
     tradeItem = {}
     if hasSellCriteriaMet(priceItem, coinsDict):
         # Close Trade
-        tradeItem = Trader.createTradeItem(priceItem, coinsDict)
+        tradeItem = Trader.createSellTradeItem(priceItem, coinsDict)
         Trader.closeTrade(tradeItem)
     return
 

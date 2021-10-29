@@ -66,8 +66,17 @@ def openTrade(trade):
     # Update Wallet
     wallet = WalletManager.loadWallet()
 
-    # Add open trade to
+    # Loop through to find wallet items
     walletItemTrade = {}
+    walletItemSourceCurrency = {}
+    for walletItem in wallet:
+        if walletItem["symbol"] == trade["symbol"]:
+            walletItemTrade = walletItem
+        if walletItem["symbol"] == Constants.TRADING_SOURCE_CURRENCY_SYMBOL:
+            walletItemSourceCurrency = walletItem
+
+
+    # Add open trade to wallet
     walletItemTrade["symbol"] = trade["symbol"]
     walletItemTrade["price"] = trade["price"]
     walletItemTrade["qty"] = trade["qty"]
@@ -76,10 +85,8 @@ def openTrade(trade):
 
     # Deduct from Source Currency wallet
     tradeQtyInSourceCurrency = trade["qty"] * trade["price"]
-    walletItemSourceCurrency = {}
-    walletItemSourceCurrency["symbol"] = Constants.TRADING_SOURCE_CURRENCY_SYMBOL
     walletItemSourceCurrency["price"] = 1
-    walletItemSourceCurrency["qty"] = -1 * tradeQtyInSourceCurrency
+    walletItemSourceCurrency["qty"] = walletItemSourceCurrency["qty"] - tradeQtyInSourceCurrency
     walletItemSourceCurrency["balance"] = 0
     WalletManager.updateWalletItem(wallet, walletItemSourceCurrency)
 
@@ -138,20 +145,28 @@ def closeTrade(trade):
 
     # Update Wallet
     wallet = WalletManager.loadWallet()
-    # Add close trade to
+
+    # Loop through to find wallet items
     walletItemTrade = {}
+    walletItemSourceCurrency = {}
+    for walletItem in wallet:
+        if walletItem["symbol"] == trade["symbol"]:
+            walletItemTrade = walletItem
+        if walletItem["symbol"] == Constants.TRADING_SOURCE_CURRENCY_SYMBOL:
+            walletItemSourceCurrency = walletItem
+
+    # Add close trade to
     walletItemTrade["symbol"] = trade["symbol"]
     walletItemTrade["price"] = trade["price"]
-    walletItemTrade["qty"] = -1 * trade["qty"]
+    walletItemTrade["qty"] = walletItemTrade["qty"] - trade["qty"]
     walletItemTrade["balance"] = 0
     WalletManager.updateWalletItem(wallet, walletItemTrade)
 
     # Deduct from Source Currency wallet
     tradeQtyInSourceCurrency = trade["qty"] * trade["price"]
-    walletItemSourceCurrency = {}
     walletItemSourceCurrency["symbol"] = Constants.TRADING_SOURCE_CURRENCY_SYMBOL
     walletItemSourceCurrency["price"] = 1
-    walletItemSourceCurrency["qty"] = tradeQtyInSourceCurrency
+    walletItemSourceCurrency["qty"] = walletItemSourceCurrency["qty"] + tradeQtyInSourceCurrency
     walletItemSourceCurrency["balance"] = 0
     WalletManager.updateWalletItem(wallet, walletItemSourceCurrency)
 
@@ -161,7 +176,7 @@ def closeTrade(trade):
 
     return closedTrades
 
-def createTradeItem(priceItem, coinsDict):
+def createBuyTradeItem(priceItem, coinsDict):
     tradeItem = {}
     tradeItem["symbol"] = priceItem["symbol"]
     tradeItem["price"] = coinsDict[priceItem["symbol"]]["price"]
@@ -169,5 +184,19 @@ def createTradeItem(priceItem, coinsDict):
     # Calculate Qty
     qty = Constants.TRADING_UNIT_AMOUNT / coinsDict[priceItem["symbol"]]["price"]
     tradeItem["qty"] = qty
+
+    return tradeItem
+
+
+def createSellTradeItem(priceItem, coinsDict):
+    tradeItem = {}
+
+    # Find current open trade to get qty
+    openTradeItem = getOpenTrade(priceItem["symbol"])
+
+    # Create tradeItem
+    tradeItem["symbol"] = openTradeItem["symbol"]
+    tradeItem["price"] = coinsDict[priceItem["symbol"]]["price"]
+    tradeItem["qty"] = openTradeItem["qty"]
 
     return tradeItem

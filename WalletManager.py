@@ -47,7 +47,7 @@ def updateWalletItem(wallet, itemToUpdate):
     for item in wallet:
         if item["symbol"] == itemToUpdate["symbol"]:
             isItemInWallet = True
-            item["qty"] = item["qty"] + itemToUpdate["qty"]
+            item["qty"] = itemToUpdate["qty"]
 
     # Add item after loop, assuming it was not there
     if isItemInWallet == False:

@@ -4,19 +4,19 @@ import PriceManager
 trade1 = {"symbol": "AAVEUSD", "type": "BUY", "tradeDate": "", "tradeTime": "", "status": "OPEN", "price": 286.20, "qty": 1}
 
 # Open Trades
-print(Trader.openTrade(trade1))
+# print(Trader.openTrade(trade1))
 
 
 # Close Trades
-# closeTrade = {"symbol": "CRVUSD", "type": "BUY", "tradeDate": "10/25/2021", "tradeTime": "14:57:52", "status": "OPEN", "price": 4.82, "qty": 10}
-# print(Trader.closeTrade(closeTrade))
+closeTrade = {"symbol": "AAVEUSD", "type": "BUY", "tradeDate": "10/25/2021", "tradeTime": "14:57:52", "status": "OPEN", "price": 286.20, "qty": 1}
+print(Trader.closeTrade(closeTrade))
 
 # --------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Create TradeItem
+# Create Buy TradeItem
 # coinsDict = PriceManager.loadBinanceCoins()
 # priceItem = {"symbol": "AAVEUSD", "price": 338.00}
-# tradeItem = Trader.createTradeItem(priceItem, coinsDict)
+# tradeItem = Trader.createBuyTradeItem(priceItem, coinsDict)
 # print(tradeItem)
 
 # Open Trade based on TradeItem
@@ -26,7 +26,8 @@ print(Trader.openTrade(trade1))
 # --------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Close newly created trade
-# tradeItemNew = {}
-# tradeItemNew = Trader.getOpenTrade("AAVEUSD")
+# coinsDict = PriceManager.loadBinanceCoins()
+# priceItem = {"symbol": "AAVEUSD", "price": 338.00}
+# tradeItemNew = Trader.createSellTradeItem(priceItem, coinsDict)
 # print(tradeItemNew)
 # print(Trader.closeTrade(tradeItemNew))
