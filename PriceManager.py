@@ -115,6 +115,17 @@ def hasSellCriteriaMet(priceItem, coinsDict):
     # Price Trends should not be downward trending
     isDownTrending = PriceTrends.isDownTrend(coinsDict[priceItem["symbol"]]["priceTrends"])
 
+    Logger.GetLogger().info("#########################################")
+    Logger.GetLogger().info("Criteria to Sell: " + priceItem["symbol"])
+    Logger.GetLogger().info("Buy Price: {x}".format(x=prevPrice))
+    Logger.GetLogger().info("Sell Price: {x}".format(x=currPrice))
+    Logger.GetLogger().info("PriceTrends - {x}".format(x=coinsDict[priceItem["symbol"]]["priceTrends"]))
+    Logger.GetLogger().info("isStopLoss:  {x}".format(x=isStopLoss))
+    Logger.GetLogger().info("isDownTrending: {x}".format(x=isDownTrending))
+    Logger.GetLogger().info("isTakeProfit: {x}".format(x=isTakeProfit))
+    Logger.GetLogger().info("percentageGainLoss: {x}".format(x=percentageGainLoss))
+    Logger.GetLogger().info("#########################################")
+
     # Sell when either Stop Loss or Down Trend is occurring
     if isStopLoss is True or isDownTrending is True or isTakeProfit is True:
         Logger.GetLogger().info("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
