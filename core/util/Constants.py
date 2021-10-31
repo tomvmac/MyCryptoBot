@@ -11,17 +11,17 @@ TEST_BINANCE_SECRET = os.environ.get('TEST_BINANCE_SECRET')
 TEST_BINANCE_API_URL = 'https://testnet.binance.vision/api'
 
 # File Paths
-BINANCE_COINS_JSON_PATH = "data/BinanceCoins.json"
-WALLET_JSON_PATH = "data/Wallet.json"
-OPEN_TRADES_JSON_PATH = "data/OpenTrades.json"
-CLOSED_TRADES_JSON_PATH = "data/ClosedTrades.json"
+BINANCE_COINS_JSON_PATH = "../data/BinanceCoins.json"
+WALLET_JSON_PATH = "../data/Wallet.json"
+OPEN_TRADES_JSON_PATH = "../data/OpenTrades.json"
+CLOSED_TRADES_JSON_PATH = "../data/ClosedTrades.json"
 
 # Log Files
-APP_LOG_FILE_PATH = "logs/app.log"
+APP_LOG_FILE_PATH = "../logs/app.log"
 
 
 # Scheduling Parameters
-SCHEDULE_EXECUTION_INTERVAL_IN_MINUTES = 15
+SCHEDULE_EXECUTION_INTERVAL_IN_MINUTES = .10
 SCHEDULE_EXECUTION_INTERVAL_IN_SECONDS = SCHEDULE_EXECUTION_INTERVAL_IN_MINUTES * 60
 SCHEDULE_SLEEP_INTERVAL_IN_SECONDS = 1
 

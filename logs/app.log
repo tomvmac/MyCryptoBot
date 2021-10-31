@@ -1,0 +1,136 @@
+2021-10-31 11:11:54,673 - Open Trade - {'symbol': 'ANKRUSD', 'price': 0.1614, 'qty': 641.8485237483955, 'status': 'OPEN', 'type': 'BUY', 'tradeDate': '10/31/2021', 'tradeTime': '11:11:54'}
+2021-10-31 11:11:54,704 - Update Wallet Item - {'symbol': 'ANKRUSD', 'price': 0.1614, 'qty': 641.8485237483955, 'balance': 0}
+2021-10-31 11:11:54,704 - Update Wallet Item - {'symbol': 'ANKRUSD', 'price': 0.1614, 'qty': 641.8485237483955, 'balance': 0}
+2021-10-31 11:11:54,705 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9896.40564826701, 'balance': 0}
+2021-10-31 11:11:54,705 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9896.40564826701, 'balance': 0}
+2021-10-31 11:11:54,705 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9896.40564826701, 'balance': 0}
+2021-10-31 11:12:37,343 - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2021-10-31 11:12:37,343 - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2021-10-31 11:12:37,343 - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2021-10-31 11:12:37,343 - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2021-10-31 11:12:37,343 - Criteria to Sell: ANKRUSD
+2021-10-31 11:12:37,343 - Criteria to Sell: ANKRUSD
+2021-10-31 11:12:37,343 - Criteria to Sell: ANKRUSD
+2021-10-31 11:12:37,343 - Criteria to Sell: ANKRUSD
+2021-10-31 11:12:37,343 - Criteria to Sell: ANKRUSD
+2021-10-31 11:12:37,344 - Buy Price: 0.1614
+2021-10-31 11:12:37,344 - Buy Price: 0.1614
+2021-10-31 11:12:37,344 - Buy Price: 0.1614
+2021-10-31 11:12:37,344 - Buy Price: 0.1614
+2021-10-31 11:12:37,344 - Buy Price: 0.1614
+2021-10-31 11:12:37,344 - Buy Price: 0.1614
+2021-10-31 11:12:37,344 - Sell Price: 0.1586
+2021-10-31 11:12:37,344 - Sell Price: 0.1586
+2021-10-31 11:12:37,344 - Sell Price: 0.1586
+2021-10-31 11:12:37,344 - Sell Price: 0.1586
+2021-10-31 11:12:37,344 - Sell Price: 0.1586
+2021-10-31 11:12:37,344 - Sell Price: 0.1586
+2021-10-31 11:12:37,344 - Sell Price: 0.1586
+2021-10-31 11:12:37,345 - PriceTrends - [{'idx': 0, 'price': 0.1618}, {'idx': 1, 'price': 0.1558}, {'idx': 2, 'price': 0.1614}, {'idx': 3, 'price': 0.1614}, {'idx': 4, 'price': 0.1614}, {'idx': 5, 'price': 0.1607}, {'idx': 6, 'price': 0.1607}, {'idx': 7, 'price': 0.1617}, {'idx': 8, 'price': 0.1604}, {'idx': 9, 'price': 0.1606}]
+2021-10-31 11:12:37,345 - PriceTrends - [{'idx': 0, 'price': 0.1618}, {'idx': 1, 'price': 0.1558}, {'idx': 2, 'price': 0.1614}, {'idx': 3, 'price': 0.1614}, {'idx': 4, 'price': 0.1614}, {'idx': 5, 'price': 0.1607}, {'idx': 6, 'price': 0.1607}, {'idx': 7, 'price': 0.1617}, {'idx': 8, 'price': 0.1604}, {'idx': 9, 'price': 0.1606}]
+2021-10-31 11:12:37,345 - PriceTrends - [{'idx': 0, 'price': 0.1618}, {'idx': 1, 'price': 0.1558}, {'idx': 2, 'price': 0.1614}, {'idx': 3, 'price': 0.1614}, {'idx': 4, 'price': 0.1614}, {'idx': 5, 'price': 0.1607}, {'idx': 6, 'price': 0.1607}, {'idx': 7, 'price': 0.1617}, {'idx': 8, 'price': 0.1604}, {'idx': 9, 'price': 0.1606}]
+2021-10-31 11:12:37,345 - PriceTrends - [{'idx': 0, 'price': 0.1618}, {'idx': 1, 'price': 0.1558}, {'idx': 2, 'price': 0.1614}, {'idx': 3, 'price': 0.1614}, {'idx': 4, 'price': 0.1614}, {'idx': 5, 'price': 0.1607}, {'idx': 6, 'price': 0.1607}, {'idx': 7, 'price': 0.1617}, {'idx': 8, 'price': 0.1604}, {'idx': 9, 'price': 0.1606}]
+2021-10-31 11:12:37,345 - PriceTrends - [{'idx': 0, 'price': 0.1618}, {'idx': 1, 'price': 0.1558}, {'idx': 2, 'price': 0.1614}, {'idx': 3, 'price': 0.1614}, {'idx': 4, 'price': 0.1614}, {'idx': 5, 'price': 0.1607}, {'idx': 6, 'price': 0.1607}, {'idx': 7, 'price': 0.1617}, {'idx': 8, 'price': 0.1604}, {'idx': 9, 'price': 0.1606}]
+2021-10-31 11:12:37,345 - PriceTrends - [{'idx': 0, 'price': 0.1618}, {'idx': 1, 'price': 0.1558}, {'idx': 2, 'price': 0.1614}, {'idx': 3, 'price': 0.1614}, {'idx': 4, 'price': 0.1614}, {'idx': 5, 'price': 0.1607}, {'idx': 6, 'price': 0.1607}, {'idx': 7, 'price': 0.1617}, {'idx': 8, 'price': 0.1604}, {'idx': 9, 'price': 0.1606}]
+2021-10-31 11:12:37,345 - PriceTrends - [{'idx': 0, 'price': 0.1618}, {'idx': 1, 'price': 0.1558}, {'idx': 2, 'price': 0.1614}, {'idx': 3, 'price': 0.1614}, {'idx': 4, 'price': 0.1614}, {'idx': 5, 'price': 0.1607}, {'idx': 6, 'price': 0.1607}, {'idx': 7, 'price': 0.1617}, {'idx': 8, 'price': 0.1604}, {'idx': 9, 'price': 0.1606}]
+2021-10-31 11:12:37,345 - PriceTrends - [{'idx': 0, 'price': 0.1618}, {'idx': 1, 'price': 0.1558}, {'idx': 2, 'price': 0.1614}, {'idx': 3, 'price': 0.1614}, {'idx': 4, 'price': 0.1614}, {'idx': 5, 'price': 0.1607}, {'idx': 6, 'price': 0.1607}, {'idx': 7, 'price': 0.1617}, {'idx': 8, 'price': 0.1604}, {'idx': 9, 'price': 0.1606}]
+2021-10-31 11:12:37,345 - isStopLoss:  True
+2021-10-31 11:12:37,345 - isStopLoss:  True
+2021-10-31 11:12:37,345 - isStopLoss:  True
+2021-10-31 11:12:37,345 - isStopLoss:  True
+2021-10-31 11:12:37,345 - isStopLoss:  True
+2021-10-31 11:12:37,345 - isStopLoss:  True
+2021-10-31 11:12:37,345 - isStopLoss:  True
+2021-10-31 11:12:37,345 - isStopLoss:  True
+2021-10-31 11:12:37,345 - isStopLoss:  True
+2021-10-31 11:12:37,346 - isDownTrending: False
+2021-10-31 11:12:37,346 - isDownTrending: False
+2021-10-31 11:12:37,346 - isDownTrending: False
+2021-10-31 11:12:37,346 - isDownTrending: False
+2021-10-31 11:12:37,346 - isDownTrending: False
+2021-10-31 11:12:37,346 - isDownTrending: False
+2021-10-31 11:12:37,346 - isDownTrending: False
+2021-10-31 11:12:37,346 - isDownTrending: False
+2021-10-31 11:12:37,346 - isDownTrending: False
+2021-10-31 11:12:37,346 - isDownTrending: False
+2021-10-31 11:12:37,347 - isTakeProfit: False
+2021-10-31 11:12:37,347 - isTakeProfit: False
+2021-10-31 11:12:37,347 - isTakeProfit: False
+2021-10-31 11:12:37,347 - isTakeProfit: False
+2021-10-31 11:12:37,347 - isTakeProfit: False
+2021-10-31 11:12:37,347 - isTakeProfit: False
+2021-10-31 11:12:37,347 - isTakeProfit: False
+2021-10-31 11:12:37,347 - isTakeProfit: False
+2021-10-31 11:12:37,347 - isTakeProfit: False
+2021-10-31 11:12:37,347 - isTakeProfit: False
+2021-10-31 11:12:37,347 - isTakeProfit: False
+2021-10-31 11:12:37,347 - percentageGainLoss: -1.734820322180915
+2021-10-31 11:12:37,347 - percentageGainLoss: -1.734820322180915
+2021-10-31 11:12:37,347 - percentageGainLoss: -1.734820322180915
+2021-10-31 11:12:37,347 - percentageGainLoss: -1.734820322180915
+2021-10-31 11:12:37,347 - percentageGainLoss: -1.734820322180915
+2021-10-31 11:12:37,347 - percentageGainLoss: -1.734820322180915
+2021-10-31 11:12:37,347 - percentageGainLoss: -1.734820322180915
+2021-10-31 11:12:37,347 - percentageGainLoss: -1.734820322180915
+2021-10-31 11:12:37,347 - percentageGainLoss: -1.734820322180915
+2021-10-31 11:12:37,347 - percentageGainLoss: -1.734820322180915
+2021-10-31 11:12:37,347 - percentageGainLoss: -1.734820322180915
+2021-10-31 11:12:37,347 - percentageGainLoss: -1.734820322180915
+2021-10-31 11:12:37,348 - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2021-10-31 11:12:37,348 - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2021-10-31 11:12:37,348 - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2021-10-31 11:12:37,348 - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2021-10-31 11:12:37,348 - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2021-10-31 11:12:37,348 - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2021-10-31 11:12:37,348 - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2021-10-31 11:12:37,348 - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2021-10-31 11:12:37,348 - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2021-10-31 11:12:37,348 - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2021-10-31 11:12:37,348 - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2021-10-31 11:12:37,348 - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2021-10-31 11:12:37,348 - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2021-10-31 11:12:37,413 - Update Wallet Item - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 0.0, 'balance': 0}
+2021-10-31 11:12:37,413 - Update Wallet Item - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 0.0, 'balance': 0}
+2021-10-31 11:12:37,413 - Update Wallet Item - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 0.0, 'balance': 0}
+2021-10-31 11:12:37,413 - Update Wallet Item - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 0.0, 'balance': 0}
+2021-10-31 11:12:37,413 - Update Wallet Item - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 0.0, 'balance': 0}
+2021-10-31 11:12:37,413 - Update Wallet Item - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 0.0, 'balance': 0}
+2021-10-31 11:12:37,413 - Update Wallet Item - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 0.0, 'balance': 0}
+2021-10-31 11:12:37,413 - Update Wallet Item - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 0.0, 'balance': 0}
+2021-10-31 11:12:37,413 - Update Wallet Item - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 0.0, 'balance': 0}
+2021-10-31 11:12:37,413 - Update Wallet Item - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 0.0, 'balance': 0}
+2021-10-31 11:12:37,413 - Update Wallet Item - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 0.0, 'balance': 0}
+2021-10-31 11:12:37,413 - Update Wallet Item - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 0.0, 'balance': 0}
+2021-10-31 11:12:37,413 - Update Wallet Item - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 0.0, 'balance': 0}
+2021-10-31 11:12:37,413 - Update Wallet Item - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 0.0, 'balance': 0}
+2021-10-31 11:12:37,415 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9998.202824133505, 'balance': 0}
+2021-10-31 11:12:37,415 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9998.202824133505, 'balance': 0}
+2021-10-31 11:12:37,415 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9998.202824133505, 'balance': 0}
+2021-10-31 11:12:37,415 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9998.202824133505, 'balance': 0}
+2021-10-31 11:12:37,415 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9998.202824133505, 'balance': 0}
+2021-10-31 11:12:37,415 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9998.202824133505, 'balance': 0}
+2021-10-31 11:12:37,415 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9998.202824133505, 'balance': 0}
+2021-10-31 11:12:37,415 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9998.202824133505, 'balance': 0}
+2021-10-31 11:12:37,415 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9998.202824133505, 'balance': 0}
+2021-10-31 11:12:37,415 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9998.202824133505, 'balance': 0}
+2021-10-31 11:12:37,415 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9998.202824133505, 'balance': 0}
+2021-10-31 11:12:37,415 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9998.202824133505, 'balance': 0}
+2021-10-31 11:12:37,415 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9998.202824133505, 'balance': 0}
+2021-10-31 11:12:37,415 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9998.202824133505, 'balance': 0}
+2021-10-31 11:12:37,415 - Update Wallet Item - {'symbol': 'USD', 'price': 1, 'qty': 9998.202824133505, 'balance': 0}
+2021-10-31 11:12:37,415 - Close Trade - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 641.8485237483955, 'tradeDate': '10/31/2021', 'tradeTime': '11:12:37', 'type': 'SELL', 'status': 'CLOSED'}
+2021-10-31 11:12:37,415 - Close Trade - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 641.8485237483955, 'tradeDate': '10/31/2021', 'tradeTime': '11:12:37', 'type': 'SELL', 'status': 'CLOSED'}
+2021-10-31 11:12:37,415 - Close Trade - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 641.8485237483955, 'tradeDate': '10/31/2021', 'tradeTime': '11:12:37', 'type': 'SELL', 'status': 'CLOSED'}
+2021-10-31 11:12:37,415 - Close Trade - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 641.8485237483955, 'tradeDate': '10/31/2021', 'tradeTime': '11:12:37', 'type': 'SELL', 'status': 'CLOSED'}
+2021-10-31 11:12:37,415 - Close Trade - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 641.8485237483955, 'tradeDate': '10/31/2021', 'tradeTime': '11:12:37', 'type': 'SELL', 'status': 'CLOSED'}
+2021-10-31 11:12:37,415 - Close Trade - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 641.8485237483955, 'tradeDate': '10/31/2021', 'tradeTime': '11:12:37', 'type': 'SELL', 'status': 'CLOSED'}
+2021-10-31 11:12:37,415 - Close Trade - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 641.8485237483955, 'tradeDate': '10/31/2021', 'tradeTime': '11:12:37', 'type': 'SELL', 'status': 'CLOSED'}
+2021-10-31 11:12:37,415 - Close Trade - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 641.8485237483955, 'tradeDate': '10/31/2021', 'tradeTime': '11:12:37', 'type': 'SELL', 'status': 'CLOSED'}
+2021-10-31 11:12:37,415 - Close Trade - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 641.8485237483955, 'tradeDate': '10/31/2021', 'tradeTime': '11:12:37', 'type': 'SELL', 'status': 'CLOSED'}
+2021-10-31 11:12:37,415 - Close Trade - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 641.8485237483955, 'tradeDate': '10/31/2021', 'tradeTime': '11:12:37', 'type': 'SELL', 'status': 'CLOSED'}
+2021-10-31 11:12:37,415 - Close Trade - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 641.8485237483955, 'tradeDate': '10/31/2021', 'tradeTime': '11:12:37', 'type': 'SELL', 'status': 'CLOSED'}
+2021-10-31 11:12:37,415 - Close Trade - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 641.8485237483955, 'tradeDate': '10/31/2021', 'tradeTime': '11:12:37', 'type': 'SELL', 'status': 'CLOSED'}
+2021-10-31 11:12:37,415 - Close Trade - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 641.8485237483955, 'tradeDate': '10/31/2021', 'tradeTime': '11:12:37', 'type': 'SELL', 'status': 'CLOSED'}
+2021-10-31 11:12:37,415 - Close Trade - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 641.8485237483955, 'tradeDate': '10/31/2021', 'tradeTime': '11:12:37', 'type': 'SELL', 'status': 'CLOSED'}
+2021-10-31 11:12:37,415 - Close Trade - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 641.8485237483955, 'tradeDate': '10/31/2021', 'tradeTime': '11:12:37', 'type': 'SELL', 'status': 'CLOSED'}
+2021-10-31 11:12:37,415 - Close Trade - {'symbol': 'ANKRUSD', 'price': 0.1586, 'qty': 641.8485237483955, 'tradeDate': '10/31/2021', 'tradeTime': '11:12:37', 'type': 'SELL', 'status': 'CLOSED'}

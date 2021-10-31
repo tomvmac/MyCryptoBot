@@ -1,7 +1,7 @@
 import time
 from datetime import datetime
 import pytz
-import Constants
+from core.util import Constants
 
 def getCurrentDate():
     return time.strftime(Constants.DATE_FORMAT)

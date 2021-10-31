@@ -1,8 +1,1 @@
-[
-  {
-    "symbol": "USD",
-    "price": 1,
-    "qty": 10000.00,
-    "balance": 10000.00
-  }
-]
+[{"symbol": "USD", "price": 1, "qty": 9998.202824133505, "balance": 0}, {"symbol": "ANKRUSD", "price": 0.1586, "qty": 0.0, "balance": 0}]

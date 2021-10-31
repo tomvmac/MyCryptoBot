@@ -1,4 +1,4 @@
-import WalletManager
+from core import WalletManager
 
 # Load wallet from file and fill in price and balance
 wallet = WalletManager.loadWallet()
@@ -29,6 +29,6 @@ itemToUpdate2 = {
     "qty": 2,
     "balance": 483.8602
   }
-# wallet = WalletManager.updateWalletItem(wallet, itemToUpdate1)
+wallet = WalletManager.updateWalletItem(wallet, itemToUpdate1)
 # wallet = WalletManager.updateWalletItem(wallet, itemToUpdate2)
-# print(wallet)
+print(wallet)

@@ -1,4 +1,5 @@
-import Constants
+from core.util import Constants
+
 
 def percentGainLoss(prevPrice, currPrice):
     percentageGainLoss = ((currPrice - prevPrice) / prevPrice) * 100

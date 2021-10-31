@@ -1,9 +1,8 @@
 import json
-import Constants
-import BinanceClient
-import Trader
-import PriceTrends
-import Logger
+from core.api.binance import BinanceClient
+from core.util import Constants, Logger
+from core import PriceTrends, Trader
+
 
 def loadBinanceCoins():
     with open(Constants.BINANCE_COINS_JSON_PATH, "r") as j:

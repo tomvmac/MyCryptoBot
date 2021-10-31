@@ -1,10 +1,9 @@
-import Trader
-import PriceManager
+from core import Trader
 
 trade1 = {"symbol": "AAVEUSD", "type": "BUY", "tradeDate": "", "tradeTime": "", "status": "OPEN", "price": 286.20, "qty": 1}
 
 # Open Trades
-# print(Trader.openTrade(trade1))
+print(Trader.openTrade(trade1))
 
 
 # Close Trades

@@ -1,4 +1,4 @@
-import PriceTrends
+from core import PriceTrends
 
 # PrecentGainLoss
 prevPrice1 = 4.00

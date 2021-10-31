@@ -1,4 +1,0 @@
-import FilesInit
-
-
-FilesInit.initializeFiles()

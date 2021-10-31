@@ -1,4 +1,5 @@
-import DateTimeUtils
+import sys
+from core.util import DateTimeUtils
 
 print(DateTimeUtils.getCurrentDate())
 

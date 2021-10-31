@@ -1,5 +1,5 @@
 import json
-import Constants
+from core.util import Constants
 
 
 def writeToFile(data, fileName):

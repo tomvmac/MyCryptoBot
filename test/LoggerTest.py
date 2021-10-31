@@ -1,4 +1,4 @@
-import Logger
+from core.util import Logger
 import time
 
 trade1 = {"symbol": "ETHUSD", "type": "BUY", "tradeDate": "", "tradeTime": "", "status": "OPEN", "price": 4000, "qty": 10}

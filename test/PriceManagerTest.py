@@ -1,8 +1,8 @@
-import PriceManager
+from core import PriceManager
 
 # Load Binance Coins from file
-# coinsDict = PriceManager.loadBinanceCoins()
-# print(coinsDict)
+coinsDict = PriceManager.loadBinanceCoins()
+print(coinsDict)
 
 # Load Current Price
 print(PriceManager.getCurrentPrice("BTCUSD"))

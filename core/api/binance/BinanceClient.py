@@ -1,8 +1,7 @@
 from binance.client import Client
 from binance.exceptions import BinanceAPIException, BinanceOrderException
-from binance.enums import *
 
-import Constants
+from core.util import Constants
 
 client = Client(Constants.LIVE_BINANCE_API_KEY, Constants.LIVE_BINANCE_SECRET)
 client.API_URL = Constants.LIVE_BINANCE_API_URL

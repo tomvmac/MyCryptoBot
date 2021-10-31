@@ -1,4 +1,4 @@
-import BinanceClient
+from core.api.binance import BinanceClient
 
 # Get Account Info
 print(BinanceClient.getAccountInfo())
