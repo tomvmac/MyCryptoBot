@@ -14,9 +14,6 @@ print(prices)
 # Update Current Prices to CoinsDict
 # PriceManager.updateBinanceCoinsWithLatestPrices()
 
-# Process Prices
-PriceManager.processPrices()
-
 # Sell Criteria
 # Scenario: Gain 20%
 # priceItem = {"symbol": "AAVEUSD","price": 345.44}

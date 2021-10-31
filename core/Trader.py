@@ -30,7 +30,7 @@ def loadClosedTrades():
     j.close()
     return closedTrades
 
-def openTrade(trade):
+def openTrade(trade, strategyConfigs):
     # Update trade with today's date as transaction date and current time
     trade["status"] = "OPEN"
     trade["type"] = "BUY"
@@ -62,7 +62,7 @@ def openTrade(trade):
     Logger.GetLogger().info("Open Trade - {x}".format(x=trade))
 
     # Update Wallet
-    wallet = WalletManager.loadWallet()
+    wallet = WalletManager.loadWallet(strategyConfigs)
 
     # Loop through to find wallet items
     walletItemTrade = {}
@@ -70,7 +70,7 @@ def openTrade(trade):
     for walletItem in wallet:
         if walletItem["symbol"] == trade["symbol"]:
             walletItemTrade = walletItem
-        if walletItem["symbol"] == Constants.TRADING_SOURCE_CURRENCY_SYMBOL:
+        if walletItem["symbol"] == strategyConfigs["TRADING_SOURCE_CURRENCY_SYMBOL"]:
             walletItemSourceCurrency = walletItem
 
 
@@ -91,7 +91,7 @@ def openTrade(trade):
     return openTrades
 
 
-def closeTrade(trade):
+def closeTrade(trade, strategyConfigs):
     openTrades = {}
     closedTrades = {}
     previousBuyTrade = {}
@@ -142,7 +142,7 @@ def closeTrade(trade):
     m.close()
 
     # Update Wallet
-    wallet = WalletManager.loadWallet()
+    wallet = WalletManager.loadWallet(strategyConfigs)
 
     # Loop through to find wallet items
     walletItemTrade = {}
@@ -150,7 +150,7 @@ def closeTrade(trade):
     for walletItem in wallet:
         if walletItem["symbol"] == trade["symbol"]:
             walletItemTrade = walletItem
-        if walletItem["symbol"] == Constants.TRADING_SOURCE_CURRENCY_SYMBOL:
+        if walletItem["symbol"] == strategyConfigs["TRADING_SOURCE_CURRENCY_SYMBOL"]:
             walletItemSourceCurrency = walletItem
 
     # Add close trade to
@@ -162,7 +162,7 @@ def closeTrade(trade):
 
     # Deduct from Source Currency wallet
     tradeQtyInSourceCurrency = trade["qty"] * trade["price"]
-    walletItemSourceCurrency["symbol"] = Constants.TRADING_SOURCE_CURRENCY_SYMBOL
+    walletItemSourceCurrency["symbol"] = strategyConfigs["TRADING_SOURCE_CURRENCY_SYMBOL"]
     walletItemSourceCurrency["price"] = 1
     walletItemSourceCurrency["qty"] = walletItemSourceCurrency["qty"] + tradeQtyInSourceCurrency
     walletItemSourceCurrency["balance"] = 0
@@ -174,13 +174,13 @@ def closeTrade(trade):
 
     return closedTrades
 
-def createBuyTradeItem(priceItem, coinsDict):
+def createBuyTradeItem(priceItem, coinsDict, strategyConfigs):
     tradeItem = {}
     tradeItem["symbol"] = priceItem["symbol"]
     tradeItem["price"] = coinsDict[priceItem["symbol"]]["price"]
 
     # Calculate Qty
-    qty = Constants.TRADING_UNIT_AMOUNT / coinsDict[priceItem["symbol"]]["price"]
+    qty = strategyConfigs["TRADING_UNIT_AMOUNT"] / coinsDict[priceItem["symbol"]]["price"]
     tradeItem["qty"] = qty
 
     return tradeItem

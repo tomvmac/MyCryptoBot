@@ -1,14 +1,16 @@
 from core import Trader
+import TestStrategyConfigs
+
 
 trade1 = {"symbol": "AAVEUSD", "type": "BUY", "tradeDate": "", "tradeTime": "", "status": "OPEN", "price": 286.20, "qty": 1}
 
 # Open Trades
-print(Trader.openTrade(trade1))
+print(Trader.openTrade(trade1, TestStrategyConfigs.getStrategyConfigs()))
 
 
 # Close Trades
 closeTrade = {"symbol": "AAVEUSD", "type": "BUY", "tradeDate": "10/25/2021", "tradeTime": "14:57:52", "status": "OPEN", "price": 286.20, "qty": 1}
-print(Trader.closeTrade(closeTrade))
+print(Trader.closeTrade(closeTrade, TestStrategyConfigs.getStrategyConfigs()))
 
 # --------------------------------------------------------------------------------------------------------------------------------------------------
 

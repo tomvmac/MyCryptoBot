@@ -1,4 +1,5 @@
 from core import PriceTrends
+import TestStrategyConfigs
 
 # PrecentGainLoss
 prevPrice1 = 4.00
@@ -14,10 +15,10 @@ currPrice2 = 3.00
 priceTrends = []
 # priceTrends = [{"idx": 0, "price": 1.22}, {"idx": 2, "price": 1.24}, {"idx": 1, "price": 1.23}, {"idx": 3, "price": 1.28}]
 
-PriceTrends.addPriceTrend(priceTrends, {"idx": 0, "price": 1.34})
-PriceTrends.addPriceTrend(priceTrends, {"idx": 0, "price": 1.99})
-PriceTrends.addPriceTrend(priceTrends, {"idx": 0, "price": 1.98})
-PriceTrends.addPriceTrend(priceTrends, {"idx": 0, "price": 2.98})
+PriceTrends.addPriceTrend(priceTrends, {"idx": 0, "price": 1.34}, TestStrategyConfigs.getStrategyConfigs())
+PriceTrends.addPriceTrend(priceTrends, {"idx": 0, "price": 1.99}, TestStrategyConfigs.getStrategyConfigs())
+PriceTrends.addPriceTrend(priceTrends, {"idx": 0, "price": 1.98}, TestStrategyConfigs.getStrategyConfigs())
+PriceTrends.addPriceTrend(priceTrends, {"idx": 0, "price": 2.98}, TestStrategyConfigs.getStrategyConfigs())
 
 # print(priceTrends)
 
@@ -43,8 +44,8 @@ priceTrends7 = [{"idx": 0, "price": 120.20}, {"idx": 1, "price": 123.90}, {"idx"
 #2021-10-28 18:12:46,014 - PriceTrends - [{'idx': 0, 'price': 0.3529}, {'idx': 1, 'price': 0.3529}, {'idx': 2, 'price': 0.3481}, {'idx': 3, 'price': 0.3439}, {'idx': 4, 'price': 0.3439}]
 
 priceTrendsA = [{'idx': 0, 'price': 0.3529}, {'idx': 1, 'price': 0.3489}, {'idx': 2, 'price': 0.3471}, {'idx': 3, 'price': 0.3439}, {'idx': 4, 'price': 0.3439}]
-print(PriceTrends.isDownTrend(priceTrendsA))
+print(PriceTrends.isDownTrend(priceTrendsA, TestStrategyConfigs.getStrategyConfigs()))
 
 
 priceTrendsB = [{'idx': 0, 'price': 0.3529}, {'idx': 1, 'price': 0.3529}, {'idx': 2, 'price': 0.3481}, {'idx': 3, 'price': 0.3439}, {'idx': 4, 'price': 0.3439}]
-print(PriceTrends.isDownTrend(priceTrendsB))
+print(PriceTrends.isDownTrend(priceTrendsB, TestStrategyConfigs.getStrategyConfigs()))

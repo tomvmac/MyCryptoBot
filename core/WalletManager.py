@@ -4,14 +4,14 @@ from core import PriceManager
 from core.util import Constants, Logger
 
 
-def loadWallet():
+def loadWallet(strategyConfigs):
     wallet = {}
     with open(Constants.WALLET_JSON_PATH, "r") as j:
         wallet = json.load(j)
     j.close()
 
     # Get latest prices
-    coins = PriceManager.updateBinanceCoinsWithLatestPrices()
+    coins = PriceManager.updateBinanceCoinsWithLatestPrices(strategyConfigs)
 
     for item in wallet:
         if item["symbol"] in coins:
@@ -20,7 +20,7 @@ def loadWallet():
 
     return wallet
 
-def getTotalWalletBalance():
+def getTotalWalletBalance(strategyConfigs):
     totalWalletBalance = 0
 
     with open(Constants.WALLET_JSON_PATH, "r") as j:
@@ -28,7 +28,7 @@ def getTotalWalletBalance():
     j.close()
 
     # Get latest prices
-    coins = PriceManager.updateBinanceCoinsWithLatestPrices()
+    coins = PriceManager.updateBinanceCoinsWithLatestPrices(strategyConfigs)
 
     for item in wallet:
         if item["symbol"] == "USD":

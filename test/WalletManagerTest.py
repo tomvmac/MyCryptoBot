@@ -1,7 +1,8 @@
 from core import WalletManager
+import TestStrategyConfigs
 
 # Load wallet from file and fill in price and balance
-wallet = WalletManager.loadWallet()
+wallet = WalletManager.loadWallet(TestStrategyConfigs.getStrategyConfigs())
 print(wallet)
 
 # Delete item from wallet and save to wallet json file
@@ -11,7 +12,7 @@ print(wallet)
 # print(wallet)
 
 # Get Total Balance
-print(WalletManager.getTotalWalletBalance())
+print(WalletManager.getTotalWalletBalance(TestStrategyConfigs.getStrategyConfigs()))
 
 
 
