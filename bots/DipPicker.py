@@ -4,6 +4,20 @@ import time
 from core.util import Logger
 from core import PriceManager, PriceTrends, Trader
 
+# Strategy Name: Dip Picker
+#
+# General Strategy:
+# Dip Picker picks up bargains after a dump from the day before.
+
+# Buy Signal:
+# 1. Buy when there is a dip within 24 hours (AND)
+# 2. NOT downtrending
+
+# Sell Signal:
+# 1. Downtrending (OR)
+# 2. Take Profit (OR)
+# 3. Stop Loss
+
 # Strategy Configs:
 # Scheduling Parameters
 SCHEDULE_EXECUTION_INTERVAL_IN_MINUTES = 15
