@@ -30,6 +30,6 @@ itemToUpdate2 = {
     "qty": 2,
     "balance": 483.8602
   }
-wallet = WalletManager.updateWalletItem(wallet, itemToUpdate1)
+# wallet = WalletManager.updateWalletItem(wallet, itemToUpdate1)
 # wallet = WalletManager.updateWalletItem(wallet, itemToUpdate2)
-print(wallet)
+# print(wallet)
