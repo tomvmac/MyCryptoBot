@@ -1,20 +1,27 @@
-import smtplib # sms
+import smtplib
+from configparser import ConfigParser
 
-botProperties = open("../config/sms-local.properties", "r+")
+# Open config file
+config = ConfigParser()
+config.read('../config/sms-local.properties')
 
-botProperties.seek(0)
-first_char = botProperties.read(1)
+# Properties
+email = config["default"]["email"]
+password = config["default"]["password"]
+gateway = config["default"]["gateway"]
+smtp = config["default"]["smtp"]
+port = config["default"]["port"]
 
-botProperties.seek(0)
-email = botProperties.readline().split('=')[1].strip()
-password = botProperties.readline().split('=')[1].strip()
-sms_gateway = botProperties.readline().split('=')[1].strip()
-smtp = botProperties.readline().split('=')[1].strip()
-port = botProperties.readline().split('=')[1].strip()
+# print(email)
+# print(password)
+# print(gateway)
+# print(smtp)
+# print(port)
 
+#
 server = smtplib.SMTP(smtp, port)
 server.starttls()
 server.login(email, password)
 
-text = "Hello Tom"
-server.sendmail(email, sms_gateway, text)
+text = "Hello Tom using configparser"
+server.sendmail(email, gateway, text)
