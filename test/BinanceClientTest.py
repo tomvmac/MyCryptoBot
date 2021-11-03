@@ -1,7 +1,6 @@
 from core.api.binance import BinanceClient
 from datetime import datetime, timedelta
 
-
 # Get Account Info
 print(BinanceClient.getAccountInfo())
 

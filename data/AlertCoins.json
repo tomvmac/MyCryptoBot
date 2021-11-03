@@ -1,0 +1,19 @@
+[
+  {
+    "symbol": "BTC",
+    "conditions": [
+      {
+        "comparisonType": "PRICE_PERCENTAGE",
+        "comparator": "IS_GREATER_THAN",
+        "conditionValue": 0.5,
+        "timeIntervalInMins": 5
+      },
+      {
+        "comparisonType": "PRICE_AMOUNT",
+        "comparator": "IS_GREATER_THAN",
+        "conditionValue": 63000,
+        "timeIntervalInMins": 0
+      }
+    ]
+  }
+]
