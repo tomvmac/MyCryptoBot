@@ -59,6 +59,40 @@ def printPrices(prices, coinsDict):
             print('price:', price['price'])
             print('\n------------')
 
+def hasPriceMetCondition(symbol, condition):
+
+    isConditionMet = False
+
+    # Handle price check condition
+    if condition["comparisonType"] == Constants.COMPARISON_TYPE_PRICE_AMOUNT:
+        # Handle price amount condition
+        isConditionMet = hasPriceAmountMetCondition(symbol, condition)
+    elif condition["comparisonType"] == Constants.COMPARISON_TYPE_PRICE_PERCENTAGE:
+        # Handle price percentage condition
+        isConditionMet = hasPricePercentageMetCondition(symbol, condition)
+
+    return isConditionMet
 
 
+def hasPriceAmountMetCondition(symbol, condition):
+
+    isConditionMet = False
+
+    # Get price for symbol and compare to condition value
+    currentPrice = getCurrentPrice(symbol)
+
+    # Get condition
+    if condition["comparator"] == Constants.COMPARISON_TYPE_IS_GREATER_THAN:
+        if currentPrice > condition["conditionValue"]:
+            isConditionMet = True
+    elif condition["comparator"] == Constants.COMPARISON_TYPE_IS_LESS_THAN:
+        if currentPrice < condition["conditionValue"]:
+            isConditionMet = True
+
+    return isConditionMet
+
+
+
+def hasPricePercentageMetCondition(symbol, condition):
+    return False
 

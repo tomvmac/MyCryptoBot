@@ -1,6 +1,6 @@
 [
   {
-    "symbol": "BTC",
+    "symbol": "BTCUSD",
     "conditions": [
       {
         "comparisonType": "PRICE_PERCENTAGE",
@@ -11,7 +11,7 @@
       {
         "comparisonType": "PRICE_AMOUNT",
         "comparator": "IS_GREATER_THAN",
-        "conditionValue": 63000,
+        "conditionValue": 61000,
         "timeIntervalInMins": 0
       }
     ]
