@@ -1,4 +1,5 @@
 import json
+from datetime import datetime, timedelta
 from core.api.binance import BinanceClient
 from core.util import Constants, Logger
 from core import PriceTrends, Trader
@@ -45,6 +46,15 @@ def getCurrentPrices():
         price["price"] = float(price["price"])
 
     return prices
+
+
+def getHistoricalPrices(symbol, interval):
+    # Get historical prices
+    yesterday = datetime.today() - timedelta(days=1)
+    yesterdayStr = str(yesterday)
+    nowStr = str(datetime.now())
+    historicalPriceBars = BinanceClient.getHistoricalPrices(symbol, interval, yesterdayStr)
+    return historicalPriceBars
 
 
 def printPrice(price):
@@ -94,5 +104,27 @@ def hasPriceAmountMetCondition(symbol, condition):
 
 
 def hasPricePercentageMetCondition(symbol, condition):
-    return False
+    isConditionMet = False
+
+    # Get price for symbol and compare to condition value
+    currentPrice = getCurrentPrice(symbol)
+
+    # Get historical prices for symbol based on interval
+    historicalPriceBars = getHistoricalPrices(symbol, condition["timeInterval"])
+
+    secondLastBarIndex = len(historicalPriceBars) - 2
+    secondLastBar = historicalPriceBars[secondLastBarIndex]
+    secondLastBarClosePrice = float(historicalPriceBars[secondLastBarIndex][4])
+
+    pricePercentageDiff = PriceTrends.percentGainLoss(secondLastBarClosePrice, currentPrice)
+
+    # Get condition
+    if condition["comparator"] == Constants.COMPARISON_TYPE_IS_GREATER_THAN:
+        if pricePercentageDiff > condition["conditionValue"]:
+            isConditionMet = True
+    elif condition["comparator"] == Constants.COMPARISON_TYPE_IS_LESS_THAN:
+        if pricePercentageDiff < condition["conditionValue"]:
+            isConditionMet = True
+
+    return isConditionMet
 

@@ -11,6 +11,11 @@ print(PriceManager.getCurrentPrice("BTCUSD"))
 prices = PriceManager.getCurrentPrices()
 print(prices)
 
+
+# Get Historical Prices
+print(PriceManager.getHistoricalPrices("BTCUSD", "1h"))
+
+
 # Update Current Prices to CoinsDict
 # PriceManager.updateBinanceCoinsWithLatestPrices()
 

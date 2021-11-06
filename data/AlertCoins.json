@@ -5,14 +5,14 @@
       {
         "comparisonType": "PRICE_PERCENTAGE",
         "comparator": "IS_GREATER_THAN",
-        "conditionValue": 0.5,
-        "timeIntervalInMins": 5
+        "conditionValue": 0.01,
+        "timeInterval": "1h"
       },
       {
         "comparisonType": "PRICE_AMOUNT",
         "comparator": "IS_GREATER_THAN",
         "conditionValue": 61000,
-        "timeIntervalInMins": 0
+        "timeInterval": ""
       }
     ]
   }
