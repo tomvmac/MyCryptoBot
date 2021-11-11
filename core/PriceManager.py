@@ -1,12 +1,12 @@
 import json
 from datetime import datetime, timedelta
-from core.api.binance import BinanceClient
+from core.api.binance import BinanceUSClient
 from core.util import Constants, Logger
 from core import PriceTrends, Trader
 
 
 def loadBinanceCoins():
-    with open(Constants.BINANCE_COINS_JSON_PATH, "r") as j:
+    with open(Constants.BINANCE_US_COINS_JSON_PATH, "r") as j:
         data = json.load(j)
     j.close()
 
@@ -27,7 +27,7 @@ def updateBinanceCoinsWithLatestPrices(strategyConfigs):
             coins[price["symbol"]]["priceTrends"] = priceTrends
 
     # Update coins to file
-    with open(Constants.BINANCE_COINS_JSON_PATH, "w") as k:
+    with open(Constants.BINANCE_US_COINS_JSON_PATH, "w") as k:
         json.dump(coins, k)
     k.close()
 
@@ -35,13 +35,13 @@ def updateBinanceCoinsWithLatestPrices(strategyConfigs):
 
 def getCurrentPrice(symbol):
     currentPrice = 0.00
-    price = BinanceClient.getPrice(symbol)
+    price = BinanceUSClient.getPrice(symbol)
     currentPrice = float(price["price"])
 
     return currentPrice
 
 def getCurrentPrices():
-    prices = BinanceClient.getPrices()
+    prices = BinanceUSClient.getPrices()
     for price in prices:
         price["price"] = float(price["price"])
 
@@ -53,7 +53,7 @@ def getHistoricalPrices(symbol, interval):
     yesterday = datetime.today() - timedelta(days=1)
     yesterdayStr = str(yesterday)
     nowStr = str(datetime.now())
-    historicalPriceBars = BinanceClient.getHistoricalPrices(symbol, interval, yesterdayStr)
+    historicalPriceBars = BinanceUSClient.getHistoricalPrices(symbol, interval, yesterdayStr)
     return historicalPriceBars
 
 
