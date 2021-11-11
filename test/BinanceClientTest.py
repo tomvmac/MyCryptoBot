@@ -19,8 +19,18 @@ print("----------------")
 # Get Prices
 print("----------------")
 print("Get Prices: ")
-print(BinanceClient.getPrices())
-print("----------------")
+binanceCoins = BinanceClient.getPrices()
+binanceCoins.sort(key=lambda x: x.get('symbol'))
+print(binanceCoins)
+
+# filter
+# filtered = filter(lambda c: 'USDT' in c['symbol'], binanceCoins)
+# filteredBinanceCoins = binanceCoins(filtered)
+#
+# print(filteredBinanceCoins)
+# print("----------------")
+
+
 
 
 # Buy Market Order

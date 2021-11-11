@@ -12,6 +12,7 @@ TEST_BINANCE_SECRET = os.environ.get('TEST_BINANCE_SECRET')
 TEST_BINANCE_API_URL = 'https://testnet.binance.vision/api'
 
 # File Paths
+BINANCE_COINS_JSON_PATH = "../data/BinanceCoins.json"
 BINANCE_US_COINS_JSON_PATH = "../data/BinanceUSCoins.json"
 WALLET_JSON_PATH = "../data/Wallet.json"
 OPEN_TRADES_JSON_PATH = "../data/OpenTrades.json"

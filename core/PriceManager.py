@@ -1,6 +1,6 @@
 import json
 from datetime import datetime, timedelta
-from core.api.binance import BinanceUSClient
+from core.api.binance import BinanceClient
 from core.util import Constants, Logger
 from core import PriceTrends, Trader
 
@@ -35,13 +35,13 @@ def updateBinanceCoinsWithLatestPrices(strategyConfigs):
 
 def getCurrentPrice(symbol):
     currentPrice = 0.00
-    price = BinanceUSClient.getPrice(symbol)
+    price = BinanceClient.getPrice(symbol)
     currentPrice = float(price["price"])
 
     return currentPrice
 
 def getCurrentPrices():
-    prices = BinanceUSClient.getPrices()
+    prices = BinanceClient.getPrices()
     for price in prices:
         price["price"] = float(price["price"])
 
@@ -53,7 +53,7 @@ def getHistoricalPrices(symbol, interval):
     yesterday = datetime.today() - timedelta(days=1)
     yesterdayStr = str(yesterday)
     nowStr = str(datetime.now())
-    historicalPriceBars = BinanceUSClient.getHistoricalPrices(symbol, interval, yesterdayStr)
+    historicalPriceBars = BinanceClient.getHistoricalPrices(symbol, interval, yesterdayStr)
     return historicalPriceBars
 
 
@@ -111,6 +111,9 @@ def hasPricePercentageMetCondition(symbol, condition):
 
     # Get historical prices for symbol based on interval
     historicalPriceBars = getHistoricalPrices(symbol, condition["timeInterval"])
+
+    if len(historicalPriceBars) < 4:
+        return False
 
     secondLastBarIndex = len(historicalPriceBars) - 2
     secondLastBar = historicalPriceBars[secondLastBarIndex]

@@ -12,12 +12,11 @@ SCHEDULE_EXECUTION_INTERVAL_IN_MINUTES = 5
 SCHEDULE_EXECUTION_INTERVAL_IN_SECONDS = SCHEDULE_EXECUTION_INTERVAL_IN_MINUTES * 60
 SCHEDULE_SLEEP_INTERVAL_IN_SECONDS = 1
 
-
 def alertPrices():
     # Iterate through AlertCoins.json
     alertCoins = []
     alertMessage = ""
-    with open(Constants.ALERT_COINS_JSON_PATH, "r") as j:
+    with open(Constants.BINANCE_COINS_JSON_PATH, "r") as j:
         alertCoins = json.load(j)
     j.close()
 
