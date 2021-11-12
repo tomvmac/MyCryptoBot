@@ -15,8 +15,8 @@ SCHEDULE_SLEEP_INTERVAL_IN_SECONDS = 1
 pricePercentCondition = {
         "comparisonType": "PRICE_PERCENTAGE",
         "comparator": "IS_GREATER_THAN",
-        "conditionValue": 2,
-        "timeInterval": "5m"
+        "conditionValue": 3,
+        "timeInterval": "15m"
 }
 
 def alertPrices():
@@ -35,6 +35,7 @@ def alertPrices():
             if PriceManager.hasPriceMetCondition(coin, pricePercentCondition):
                 alertMessage = coin["symbol"] + " " + pricePercentCondition["comparisonType"] + " " + pricePercentCondition["comparator"] + " " + str(pricePercentCondition["conditionValue"])
                 SmsSender.sendMsg(alertMessage)
+                Logger.GetLogger().info("Coin Alert: " + alertMessage)
 
     return
 
