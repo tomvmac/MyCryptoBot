@@ -16,25 +16,24 @@ pricePercentCondition = {
         "comparisonType": "PRICE_PERCENTAGE",
         "comparator": "IS_GREATER_THAN",
         "conditionValue": 2,
-        "timeInterval": "15m"
+        "timeInterval": "5m"
 }
 
 def alertPrices():
     # Iterate through AlertCoins.json
-    alertCoins = []
+    coins = []
     alertMessage = ""
-    with open(Constants.BINANCE_COINS_JSON_PATH, "r") as j:
-        alertCoins = json.load(j)
-    j.close()
+
+    coins = PriceManager.getCurrentPrices()
 
     # sort symbols
-    alertCoins.sort(key=lambda x: x.get('symbol'))
+    coins.sort(key=lambda x: x.get('symbol'))
 
     # Process each coin and each condition
-    for alertCoin in alertCoins:
-        if 'USDT' in alertCoin['symbol']:
-            if PriceManager.hasPriceMetCondition(alertCoin["symbol"], pricePercentCondition):
-                alertMessage = alertCoin["symbol"] + " " + pricePercentCondition["comparisonType"] + " " + pricePercentCondition["comparator"] + " " + str(pricePercentCondition["conditionValue"])
+    for coin in coins:
+        if 'USDT' in coin['symbol']:
+            if PriceManager.hasPriceMetCondition(coin, pricePercentCondition):
+                alertMessage = coin["symbol"] + " " + pricePercentCondition["comparisonType"] + " " + pricePercentCondition["comparator"] + " " + str(pricePercentCondition["conditionValue"])
                 SmsSender.sendMsg(alertMessage)
 
     return

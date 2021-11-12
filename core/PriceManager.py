@@ -69,27 +69,27 @@ def printPrices(prices, coinsDict):
             print('price:', price['price'])
             print('\n------------')
 
-def hasPriceMetCondition(symbol, condition):
+def hasPriceMetCondition(coin, condition):
 
     isConditionMet = False
 
     # Handle price check condition
     if condition["comparisonType"] == Constants.COMPARISON_TYPE_PRICE_AMOUNT:
         # Handle price amount condition
-        isConditionMet = hasPriceAmountMetCondition(symbol, condition)
+        isConditionMet = hasPriceAmountMetCondition(coin, condition)
     elif condition["comparisonType"] == Constants.COMPARISON_TYPE_PRICE_PERCENTAGE:
         # Handle price percentage condition
-        isConditionMet = hasPricePercentageMetCondition(symbol, condition)
+        isConditionMet = hasPricePercentageMetCondition(coin, condition)
 
     return isConditionMet
 
 
-def hasPriceAmountMetCondition(symbol, condition):
+def hasPriceAmountMetCondition(coin, condition):
 
     isConditionMet = False
 
     # Get price for symbol and compare to condition value
-    currentPrice = getCurrentPrice(symbol)
+    currentPrice = float(coin["price"])
 
     # Get condition
     if condition["comparator"] == Constants.COMPARISON_TYPE_IS_GREATER_THAN:
@@ -103,14 +103,14 @@ def hasPriceAmountMetCondition(symbol, condition):
 
 
 
-def hasPricePercentageMetCondition(symbol, condition):
+def hasPricePercentageMetCondition(coin, condition):
     isConditionMet = False
 
     # Get price for symbol and compare to condition value
-    currentPrice = getCurrentPrice(symbol)
+    currentPrice = float(coin["price"])
 
     # Get historical prices for symbol based on interval
-    historicalPriceBars = getHistoricalPrices(symbol, condition["timeInterval"])
+    historicalPriceBars = getHistoricalPrices(coin["symbol"], condition["timeInterval"])
 
     if len(historicalPriceBars) < 4:
         return False
