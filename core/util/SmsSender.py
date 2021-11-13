@@ -12,9 +12,17 @@ gateway = config["default"]["gateway"]
 smtp = config["default"]["smtp"]
 port = config["default"]["port"]
 
-server = smtplib.SMTP(smtp, port)
-server.starttls()
-server.login(email, password)
-
 def sendMsg(message):
-    server.sendmail(email, gateway, message)
+    try:
+        server = smtplib.SMTP(smtp, port)
+        server.starttls()
+        server.login(email, password)
+        server.sendmail(email, gateway, message)
+        server.close()
+    except Exception:
+        server = smtplib.SMTP(smtp, port)
+        server.starttls()
+        server.login(email, password)
+        server.sendmail(email, gateway, message)
+        server.close()
+
