@@ -24,7 +24,6 @@ def alertPrices():
     # Iterate through AlertCoins.json
     coins = []
     alertMessage = ""
-    strWithin = " within "
 
     coins = PriceManager.getCurrentPrices()
 
