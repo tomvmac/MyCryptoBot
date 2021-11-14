@@ -6,6 +6,7 @@ from core.util import SmsSender
 from core.util import Constants
 from core import PriceManager
 from core.util import Logger
+from core.util import DateTimeUtils
 
 # Scheduling Parameters
 SCHEDULE_EXECUTION_INTERVAL_IN_MINUTES = 15
@@ -23,6 +24,7 @@ def alertPrices():
     # Iterate through AlertCoins.json
     coins = []
     alertMessage = ""
+    strWithin = " within "
 
     coins = PriceManager.getCurrentPrices()
 
@@ -31,11 +33,12 @@ def alertPrices():
 
     # Process each coin and each condition
     for coin in coins:
+        alertMessage = "\r\n\r\n Coin Alert on " + str(DateTimeUtils.getCurrentDate()) + " at " + str(DateTimeUtils.getCurrentTime()) + ": " + coin["symbol"] + " " + pricePercentCondition["comparisonType"] + " " + pricePercentCondition["comparator"] + " " + str(pricePercentCondition["conditionValue"]) + " within " + pricePercentCondition["timeInterval"]
+
         if 'USDT' in coin['symbol']:
             if PriceManager.hasPriceMetCondition(coin, pricePercentCondition):
-                alertMessage = coin["symbol"] + " " + pricePercentCondition["comparisonType"] + " " + pricePercentCondition["comparator"] + " " + str(pricePercentCondition["conditionValue"])
                 SmsSender.sendMsg(alertMessage)
-                Logger.GetLogger().info("Coin Alert: " + alertMessage)
+                Logger.GetLogger().info(alertMessage)
 
     return
 
